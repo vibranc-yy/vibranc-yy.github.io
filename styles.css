@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Meow+Script&display=swap');
+header {
+    color:blanchedalmond;
+    position: relative;
+    background-color: black;
+    height: 99vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  header .heading{
+    font-family: 'Meow Script', cursive;
+    font-size: 66px;
+  }
+  header .heading2{
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+  }
+  
+  header video {
+      
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  /* Media Query for devices withi coarse pointers and no hover functionality */
+  
+  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+  
+    header video {
+      display: none;
+    }
+  }
+
+  /* navbar styling */
+.logo{
+  position:fixed;
+  float: left;
+  margin:16px 36px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav{
+  position: fixed;
+  width: 100%;
+}
+.nav ul{
+  list-style: none;
+  background: rgba(0,0,0,0);
+  overflow: hidden;
+  color: white;
+  text-align: right;
+  margin:0;
+  padding: 0;
+  transition: 1s;
+}
+.nav .black ul{
+  background-color: black;
+}
+.nav ul li{
+  display: inline-block;
+  padding: 20px;
+}
+.nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
