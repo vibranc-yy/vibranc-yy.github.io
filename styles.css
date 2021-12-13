@@ -266,11 +266,11 @@ body {
 /* Layout Structure=========================================*/
 
 .main {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom right,
     #0c0b0a,
     #e3d9c6
-  );
+  ); */
   display: flex;
   flex-direction: column;
   justify-content: center;
