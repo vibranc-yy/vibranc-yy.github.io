@@ -489,6 +489,12 @@ body {
 }
 
 
+.my-5{
+  margin: 10px 60px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+
+
 
 
 /* Testimonial ================================ */
@@ -564,4 +570,5 @@ body {
     padding: 30px 20px;
     height: auto;
   }
+
 }
