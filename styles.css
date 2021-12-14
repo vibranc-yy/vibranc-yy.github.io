@@ -483,3 +483,9 @@ body {
   font-size: 1.2rem;
   text-align: center;
 }
+
+.my-5{
+  margin: 10px 60px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+}
