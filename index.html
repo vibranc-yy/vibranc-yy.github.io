@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Vibrancyy</title>
+</head>
+<body>
+  
+  <header>
+    <div class="nav container h-100" >
+    
+          <div class="logo"><a href="#">Logo</div>
+          <ul class="menu">
+              <li><a href="#home" class="menu-btn">Home</a></li>
+              <li><a href="#about" class="menu-btn">About</a></li>            
+              <li><a href="#contact" class="menu-btn">Contact</a></li>
+          </ul>
+  
+        </div>
+  
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+  
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="https://vod-progressive.akamaized.net/exp=1639299999~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2711%2F7%2F188557098%2F624066551.mp4~hmac=8ed7c0fc43df47626ef70da613d4bf751831b23836831894d85651f8771fe28a/vimeo-prod-skyfire-std-us/01/2711/7/188557098/624066551.mp4?filename=Milky+Way+Glowing+At+Night.mp4" type="video/mp4">
+    </video>
+  
+    <!-- The header content -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3 heading">Vibrancyy</h1>
+          <p class="lead mb-0 heading2">Using HTML5 Video and Bootstrap</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Page section example for content below the video header -->
+  <section class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are built into Bootstrap.</p>
+          <p>The overlay color and opacity can be changed by modifying the <code>background-color</code> and <code>opacity</code> properties of the <code>.overlay</code> class in the CSS.</p>
+          <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+          <p class="mb-0">
+            Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are built into Bootstrap.</p>
+          <p>The overlay color and opacity can be changed by modifying the <code>background-color</code> and <code>opacity</code> properties of the <code>.overlay</code> class in the CSS.</p>
+          <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+          <p class="mb-0">
+            Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="main">
+        
+    <section class="card-area">
+
+        <!-- Card: City -->
+        <section class="card-section">
+            <div class="card">
+                <div class="flip-card">
+                    <div class="flip-card__container">
+                        <div class="card-front">
+                            <div class="card-front__tp card-front__tp--city">
+                              <!-- card icon class = "card-front__icon"-->                               
+
+                           <h2 class="card-front__heading">
+                            City break
+                        </h2>
+                        <p class="card-front__text-price">
+                            From £29
+                        </p>
+                            </div>
+
+                            <div class="card-front__bt">
+                                <p class="card-front__text-view card-front__text-view--city">
+                                    View me
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <video class="video__container" autoplay muted loop>
+                                <source class="video__media" src="https://player.vimeo.com/external/370331493.sd.mp4?s=e90dcaba73c19e0e36f03406b47bbd6992dd6c1c&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inside-page">
+                    <div class="inside-page__container">
+                        <h3 class="inside-page__heading inside-page__heading--city">
+                            For urban lovers
+                        </h3>
+                        <p class="inside-page__text">
+                           As cities never sleep, there are always something going on, no matter what time!
+                        </p>
+                        <a href="#" class="inside-page__btn inside-page__btn--city">View deals</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card: Ski -->
+        <section class="card-section">
+            <div class="card">
+                <div class="flip-card">
+                    <div class="flip-card__container">
+                        <div class="card-front">
+                            <div class="card-front__tp card-front__tp--ski">
+                                
+                                           <h2 class="card-front__heading">
+                                               Ski trip
+                                           </h2>
+                                           <p class="card-front__text-price">
+                                               From £199
+                                           </p>
+                            </div>
+
+                            <div class="card-front__bt">
+                                <p class="card-front__text-view card-front__text-view--ski">
+                                    View me
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-back">
+                            <video class="video__container" autoplay muted loop>
+                                <source class="video__media" src="https://player.vimeo.com/external/195913085.sd.mp4?s=7c12f7a83de62a8900fd2ae049297070b9bc8a54&profile_id=164&oauth2_token_id=574477611" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inside-page">
+                    <div class="inside-page__container">
+                        <h3 class="inside-page__heading inside-page__heading--ski">
+                            For snow 
+                        </h3>
+                        <p class="inside-page__text">
+                           Love snow? Why not take up exciting ski-in sessions and hit the slope? 
+                        </p>
+                        <a href="#" class="inside-page__btn inside-page__btn--ski">View deals</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card: Beach -->
+        <section class="card-section">
+            <div class="card">
+                <div class="flip-card">
+                    <div class="flip-card__container">
+                        <div class="card-front">
+                            <div class="card-front__tp card-front__tp--beach">
+                                
+                           
+                                           <h2 class="card-front__heading">
+                                               Beach time
+                                           </h2>
+                                           <p class="card-front__text-price">
+                                               From £229
+                                           </p>
+                            </div>
+
+                            <div class="card-front__bt">
+                                <p class="card-front__text-view card-front__text-view--beach">
+                                    View me
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <video class="video__container" autoplay muted loop>
+                                <source class="video__media" src="https://player.vimeo.com/external/332588783.sd.mp4?s=cab1817146dd72daa6346a1583cc1ec4d9e677c7&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inside-page">
+                    <div class="inside-page__container">
+                        <h3 class="inside-page__heading inside-page__heading--beach">
+                            For sun lovers
+                        </h3>
+                        <p class="inside-page__text">
+                           Relax and get sun-kissed tan in the sea or take up surfting for an adventure!
+                        </p>
+                        <a href="#" class="inside-page__btn inside-page__btn--beach">View deals</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card: Camping -->
+        <section class="card-section">
+            <div class="card">
+                <div class="flip-card">
+                    <div class="flip-card__container">
+                        <div class="card-front">
+                            <div class="card-front__tp card-front__tp--camping">
+              
+                                           <h2 class="card-front__heading">
+                                               Camping trek
+                                           </h2>
+                                           <p class="card-front__text-price">
+                                               From £129
+                                           </p>
+                            </div>
+
+                            <div class="card-front__bt">
+                                <p class="card-front__text-view card-front__text-view--camping">
+                                    View me
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <video class="video__container" autoplay muted loop>
+                                <source class="video__media" src="https://player.vimeo.com/external/180185916.sd.mp4?s=c893e4770f87b00e0d6b5a1de138b01b02aaa085&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inside-page">
+                    <div class="inside-page__container">
+                        <h3 class="inside-page__heading inside-page__heading--camping">
+                            For nature lovers
+                        </h3>
+                        <p class="inside-page__text">
+                           Get your boots on for some hiking and explore all the beautiful scenery of nature!
+                        </p>
+                        <a href="#" class="inside-page__btn inside-page__btn--camping">View deals</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    </div>
+    <div class="main">
+        
+      <section class="card-area">
+  
+          <!-- Card: City -->
+          <section class="card-section">
+              <div class="card">
+                  <div class="flip-card">
+                      <div class="flip-card__container">
+                          <div class="card-front">
+                              <div class="card-front__tp card-front__tp--city">
+                                <!-- card icon class = "card-front__icon"-->                               
+  
+                             <h2 class="card-front__heading">
+                              City break
+                          </h2>
+                          <p class="card-front__text-price">
+                              From £29
+                          </p>
+                              </div>
+  
+                              <div class="card-front__bt">
+                                  <p class="card-front__text-view card-front__text-view--city">
+                                      View me
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="card-back">
+                              <video class="video__container" autoplay muted loop>
+                                  <source class="video__media" src="https://player.vimeo.com/external/370331493.sd.mp4?s=e90dcaba73c19e0e36f03406b47bbd6992dd6c1c&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                              </video>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="inside-page">
+                      <div class="inside-page__container">
+                          <h3 class="inside-page__heading inside-page__heading--city">
+                              For urban lovers
+                          </h3>
+                          <p class="inside-page__text">
+                             As cities never sleep, there are always something going on, no matter what time!
+                          </p>
+                          <a href="#" class="inside-page__btn inside-page__btn--city">View deals</a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+  
+          <!-- Card: Ski -->
+          <section class="card-section">
+              <div class="card">
+                  <div class="flip-card">
+                      <div class="flip-card__container">
+                          <div class="card-front">
+                              <div class="card-front__tp card-front__tp--ski">
+                                  
+                                             <h2 class="card-front__heading">
+                                                 Ski trip
+                                             </h2>
+                                             <p class="card-front__text-price">
+                                                 From £199
+                                             </p>
+                              </div>
+  
+                              <div class="card-front__bt">
+                                  <p class="card-front__text-view card-front__text-view--ski">
+                                      View me
+                                  </p>
+                              </div>
+                          </div>
+  
+                          <div class="card-back">
+                              <video class="video__container" autoplay muted loop>
+                                  <source class="video__media" src="https://player.vimeo.com/external/195913085.sd.mp4?s=7c12f7a83de62a8900fd2ae049297070b9bc8a54&profile_id=164&oauth2_token_id=574477611" type="video/mp4">
+                              </video>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="inside-page">
+                      <div class="inside-page__container">
+                          <h3 class="inside-page__heading inside-page__heading--ski">
+                              For snow lovers
+                          </h3>
+                          <p class="inside-page__text">
+                             Love snow? Why not take up exciting ski-in sessions and hit the slope? 
+                          </p>
+                          <a href="#" class="inside-page__btn inside-page__btn--ski">View deals</a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+  
+          <!-- Card: Beach -->
+          <section class="card-section">
+              <div class="card">
+                  <div class="flip-card">
+                      <div class="flip-card__container">
+                          <div class="card-front">
+                              <div class="card-front__tp card-front__tp--beach">
+                                  
+                             
+                                             <h2 class="card-front__heading">
+                                                 Beach time
+                                             </h2>
+                                             <p class="card-front__text-price">
+                                                 From £229
+                                             </p>
+                              </div>
+  
+                              <div class="card-front__bt">
+                                  <p class="card-front__text-view card-front__text-view--beach">
+                                      View me
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="card-back">
+                              <video class="video__container" autoplay muted loop>
+                                  <source class="video__media" src="https://player.vimeo.com/external/332588783.sd.mp4?s=cab1817146dd72daa6346a1583cc1ec4d9e677c7&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                              </video>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="inside-page">
+                      <div class="inside-page__container">
+                          <h3 class="inside-page__heading inside-page__heading--beach">
+                              For sun lovers
+                          </h3>
+                          <p class="inside-page__text">
+                             Relax and get sun-kissed tan in the sea or take up surfting for an adventure!
+                          </p>
+                          <a href="#" class="inside-page__btn inside-page__btn--beach">View deals</a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+  
+          
+      </section>
+      <!-- --------------------------------------------------------------- -->
+
+      
+
+
+       <!------------------------------------------------------------------  -->
+      <footer class="footer">
+          <p class="footer-text">&copy; 2021 Created by Maza designDev</p>
+        </footer>
+      </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+  $(window).scroll(function(){
+
+    if ($(window).scrollTop()){
+        $("nav").addClass("black");
+    }
+    else{
+        $("nav").removeClass("black");
+    }
+});
+</script>
+</body>
+</html>
