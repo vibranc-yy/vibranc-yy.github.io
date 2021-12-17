@@ -108,367 +108,154 @@ header {
 /* ----------------------------------------card styling  */
 /* CSS reset */
 /* CSS reset */
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
+.containerxy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  background-color: #0a0808;
+  flex-grow: 1;
+ 
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-html { font-size: 62.5%; }
-
-body {
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  position: relative;
+.cards__item {
+  height: 300px;
 }
 
-/* Typography =======================*/
-
-/* Headings */
-
-/* Main heading for card's front cover */
-.card-front__heading {
-  font-size: 1.5rem;
-  margin-top: .25rem;
-}
-
-/* Main heading for inside page */
-.inside-page__heading { 
-  padding-bottom: 1rem; 
-  width: 100%;
-}
-
-/* Mixed */
-
-/* For both inside page's main heading and 'view me' text on card front cover */
-.inside-page__heading,
-.card-front__text-view {
-  font-size: 1.3rem;
-  font-weight: 800;
-  margin-top: .2rem;
-}
-
-.inside-page__heading--city,
-.card-front__text-view--city { color: #ff62b2; }
-
-.inside-page__heading--ski,
-.card-front__text-view--ski { color: #2aaac1; }
-
-.inside-page__heading--beach,
-.card-front__text-view--beach { color: #fa7f67; }
-
-.inside-page__heading--camping,
-.card-front__text-view--camping { color: #00b97c; }
-
-/* Front cover */
-
-.card-front__tp { color: #fafbfa; }
-
-/* For pricing text on card front cover */
-.card-front__text-price {
-  font-size: 1.2rem;
-  margin-top: -.2rem;
-}
-
-/* Back cover */
-
-/* For inside page's body text */
-.inside-page__text {
-  color: #333;
-}
-
-/* Icons ===========================================*/
-
-.card-front__icon {
-  fill: #fafbfa;
-  font-size: 3vw;
-  height: 3.25rem;
-  margin-top: -.5rem;
-  width: 3.25rem;
-}
-
-/* Buttons =================================================*/
-
-.inside-page__btn {
-  background-color: transparent;
-  border: 3px solid;
-  border-radius: .5rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 2rem;
-  overflow: hidden;
-  padding: .7rem .75rem;
-  position: relative;
-  text-decoration: none;
-  transition: all .3s ease;
-  width: 90%;
-  z-index: 10;
-}
-
-.inside-page__btn::before { 
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform: scaleY(0);
-  transition: all .3s ease;
-  width: 100%;
-  z-index: -1;
-}
-
-.inside-page__btn--city { 
-  border-color: #ff40a1;
-  color: #ff40a1;
-}
-
-.inside-page__btn--city::before { 
-  background-color: #ff40a1;
-}
-
-.inside-page__btn--ski { 
-  border-color: #279eb2;
-  color: #279eb2;
-}
-
-.inside-page__btn--ski::before { 
-  background-color: #279eb2;
-}
-
-.inside-page__btn--beach { 
-  border-color: #fa7f67;
-  color: #fa7f67;
-}
-
-.inside-page__btn--beach::before { 
-  background-color: #fa7f67;
-}
-
-.inside-page__btn--camping { 
-  border-color: #00b97d;
-  color: #00b97d;
-}
-
-.inside-page__btn--camping::before { 
-  background-color: #00b97d;
-}
-
-.inside-page__btn:hover { 
-  color: #fafbfa;
-}
-
-.inside-page__btn:hover::before { 
-  transform: scaleY(1);
-}
-
-/* Layout Structure=========================================*/
-
-.main {
-  /* background: linear-gradient(
-    to bottom right,
-    #0c0b0a,
-    #e3d9c6
-  ); */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 60vh;
-  width: 100%;
-}
-
-/* Container to hold all cards in one place */
-.card-area {
-  align-items: center;
-  display: flex;
-  flex-wrap: nowrap;
-  height: 100%;
-  justify-content: space-evenly;
-  padding: 1rem;
-}
-
-/* Card ============================================*/
-
-/* Area to hold an individual card */
-.card-section {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  width: 100%;
-}
-
-/* A container to hold the flip card and the inside page */
 .card {
-  background-color: rgba(0,0,0, .05);
-  box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.5);
-  height: 20rem;
   position: relative;
-  transition: all 1s ease;
-  width: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
 }
-
-/* Flip card - covering both the front and inside front page */
-
-/* An outer container to hold the flip card. This excludes the inside page */
-.flip-card {
-  height: 20rem;
-  perspective: 100rem;
-  position: absolute;
-  right: 0;
-  transition: all 1s ease;
-  visibility: hidden;
-  width: 16rem;
-  z-index: 100;
-}
-
-/* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
-/* This is done so content in the inside page can be selected */
-.flip-card > * {
-  visibility: visible;
-}
-
-/* An inner container to hold the flip card. This excludes the inside page */
-.flip-card__container {
-  height: 100%;
-  position: absolute;
-  right: 0;
-  transform-origin: left;
-  transform-style: preserve-3d;
-  transition: all 1s ease;
-  width: 100%;
-}
-
-.card-front,
-.card-back {
-  backface-visibility: hidden;
-  height: 100%;
-  left: 0;
+.card::before {
+  content: "";
   position: absolute;
   top: 0;
-  width: 100%;
-}
-
-/* Styling for the front side of the flip card */
-
-/* container for the front side */
-.card-front {
-  background-color: #fafbfa;
-  height: 20rem;
-  width: 16 rem;
-}
-
-/* Front side's top section */
-.card-front__tp {
-  align-items: center;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
-  display: flex;
-  flex-direction: column;
-  height: 17rem;
-  justify-content: center;
-  padding: .75rem;
-}
-
-.card-front__tp--city {
-  background: linear-gradient(
-    to bottom,
-    #ff73b9,
-    #ff40a1
-  );
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTAYhFkNrmRfN1VFDiPc-H-l2FEm5MRs2raw&usqp=CAU");
-}
-
-.card-front__tp--ski {
-  background: linear-gradient(
-    to bottom,
-    #47c2d7,
-    #279eb2
-  );
-  background-image: url("https://static.scientificamerican.com/sciam/cache/file/4E0744CD-793A-4EF8-B550B54F7F2C4406_source.jpg");
-}
-
-.card-front__tp--beach {
-  background: linear-gradient(
-    to bottom,
-    #fb9b88,
-    #f86647
-  );
-}
-
-.card-front__tp--camping {
-  background: linear-gradient(
-    to bottom,
-    #00db93,
-    #00b97d
-  );
-}
-
-/* Front card's bottom section */
-.card-front__bt {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-/* Styling for the back side of the flip card */
-
-.card-back {
-  background-color: #fafbfa;
-  transform: rotateY(180deg);
-}
-
-/* Specifically targeting the <video> element */
-.video__container {
-  clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
-  height: auto;
-  min-height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
-
-/* Inside page */
-
-.inside-page {
-  background-color: #fafbfa;
-  box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0,0,0,0.25);
+  left: 0;
+  z-index: 20;
+  width: 50%;
   height: 100%;
-  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+.card:nth-child(1) {
+  background-image: linear-gradient(45deg, #120b22, #f7308c);
+}
+.card:nth-child(2) {
+  background-image: linear-gradient(45deg, #8fac1e, #1072a3);
+}
+.card:nth-child(3) {
+  background-image: linear-gradient(45deg, #52061f, #ffeb3b);
+}
+
+.card__frame {
   position: absolute;
+  top: 0;
+  left: 0;
   right: 0;
-  transition: all 1s ease;
-  width: 15rem;
-  z-index: 1;
-}
-
-.inside-page__container {
-  align-items: center;
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  text-align: center; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card__picture {
+  margin-bottom: 12px;
+  filter: invert(1);
+}
+.card__picture img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card__title {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.card__overlay::before {
+  content: "Read";
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.card__overlay:hover, .card__overlay:focus {
+  bottom: 0;
+  right: 0;
   width: 100%;
+  height: 100%;
+  box-shadow: none;
+  border-radius: 0;
+  opacity: 0.9;
+}
+.card__overlay:hover::before, .card__overlay:focus::before {
+  content: none;
+}
+.card:nth-child(1) .card__overlay {
+  background-image: linear-gradient(45deg, #3503ad, #f7308c);
+}
+.card:nth-child(2) .card__overlay {
+  background-image: linear-gradient(45deg, #ccff00, #09afff);
+}
+.card:nth-child(3) .card__overlay {
+  background-image: linear-gradient(45deg, #e91e63, #ffeb3b);
 }
 
-/* Functionality ====================================*/
-
-/* This is to keep the card centered (within its container) when opened */
-.card:hover {
-  box-shadow:
-  -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.75);
-  width: 30rem;
+.card__content {
+  z-index: 1;
+  padding: 20px;
+  line-height: 1.4;
+  opacity: 0;
+  visibility: hidden;
+  box-sizing: border-box;
+  pointer-events: none;
+  transition: 0s;
 }
-
-/* When the card is hovered, the flip card container will rotate */
-.card:hover .flip-card__container {
-  transform: rotateY(-180deg);
+.card__overlay:hover ~ .card__content {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.2s 0.3s;
 }
-
-/* When the card is hovered, the shadow on the inside page will shrink to the left */
-.card:hover .inside-page {
-  box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
+.card__content h2 {
+  margin: 0;
+  margin-bottom: 16px;
 }
-
 /* Footer ====================================*/
 
 .footer {
@@ -491,125 +278,119 @@ body {
 }
 
 /* Our Paterner Slider==================================== */
-.Partner-head{
-  text-align:center;
-  padding: 20px;
-}
+/* Slick Slider */
+
 /* Slider */
 
 .slick-slide {
-    margin: 0px 20px;
+  margin: 0px 20px;
 }
 
 .slick-slide img {
-    width: 100%;
+  width: 100%;
 }
 
-.slick-slider
-{
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.slick-list
-{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
-.slick-list:focus
-{
-    outline: none;
+
+.slick-list:focus {
+  outline: none;
 }
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
 }
 
 .slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
 }
+
 .slick-track:before,
-.slick-track:after
-{
-    display: table;
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
+.slick-track:after {
+  display: table;
+  content: "";
 }
 
-.slick-slide
-{
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
+.slick-track:after {
+  clear: both;
 }
-[dir='rtl'] .slick-slide
-{
-    float: right;
+
+.slick-loading .slick-track {
+  visibility: hidden;
 }
-.slick-slide img
-{
-    display: block;
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
 }
-.slick-slide.slick-loading img
-{
-    display: none;
+
+[dir="rtl"] .slick-slide {
+  float: right;
 }
-.slick-slide.dragging img
-{
-    pointer-events: none;
+
+.slick-slide img {
+  display: block;
 }
-.slick-initialized .slick-slide
-{
-    display: block;
+
+.slick-slide.slick-loading img {
+  display: none;
 }
-.slick-loading .slick-slide
-{
-    visibility: hidden;
+
+.slick-slide.dragging img {
+  pointer-events: none;
 }
-.slick-vertical .slick-slide
-{
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
+
+.slick-initialized .slick-slide {
+  display: block;
 }
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
 .slick-arrow.slick-hidden {
-    display: none;
+  display: none;
 }
 
 /* Testimonial ================================ */
