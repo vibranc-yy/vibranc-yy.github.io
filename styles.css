@@ -1,4 +1,7 @@
-
+*{
+  margin: 0px;
+  padding: 0px;
+}
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Meow+Script&display=swap');
 .text-center{
   text-align: center;
