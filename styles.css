@@ -2,6 +2,10 @@
   margin: 0px;
   padding: 0px;
 }
+body{
+  color: white;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.966),rgb(155, 7, 7),rgb(3, 3, 3),rgb(67, 8, 85),#000);
+}
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Meow+Script&display=swap');
 .text-center{
   text-align: center;
