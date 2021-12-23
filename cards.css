@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
 
 .wrapper{
+  margin-top: 30px;
+  margin-bottom: 0;
     /* background-image: linear-gradient(45deg, rgba(209, 0, 42, 0.6) 0%, #0E5DC4 100%); */
-    background-image:url("https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132206/news-slider/background.webp");
-    height: 800px;
+    /* background-image:url("https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132206/news-slider/background.webp"); */
+    height: 700px;
     position: relative;
   overflow-x: hidden !important;
   font-family: "Quicksand", sans-serif;
@@ -54,7 +56,7 @@ a, a:hover {
   box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
   opacity: 0;
   transition: all 0.3s;
-  left: -30px;
+  /* left: -30px; */
 }
 .item-bg.active {
   left: 0;
@@ -199,7 +201,7 @@ a, a:hover {
 }
 @media screen and (max-width: 576px) {
   .news__item {
-    padding: 20px;
+    padding: 15px;
   }
 }
 .news-date {

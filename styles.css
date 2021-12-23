@@ -4,7 +4,7 @@
 }
 body{
   color: white;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.966),rgb(155, 7, 7),rgb(3, 3, 3),rgb(67, 8, 85),#000);
+  background-image: linear-gradient(to right,black ,85%,rgb(126, 17, 39));
 }
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Meow+Script&display=swap');
 .text-center{
@@ -121,7 +121,8 @@ header {
   justify-content: center;
   align-items: center;
   /* min-height: 100vh; */
-  background-color: #33d1a0;
+  /* background-image: linear-gradient(to right, (67, 8, 85),#000); */
+
 }
 
 .testi-container{
@@ -136,13 +137,14 @@ header {
 
 .testi-container .box{
   position: relative;
+  border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 320px;
-  height: 420px;
+  width: 300px;
+  height: 400px;
   margin: 20px;
-  background: #121e27;
+	background-image: linear-gradient(to right,crimson,20%,black);
 }
 
 .testi-container .box .content{
@@ -166,7 +168,7 @@ header {
 }
 
 .testi-container .box .content h3{
-  color: #33d1a0;
+  color: white;
   text-transform:uppercase;
   font-size: 16px;
   letter-spacing: 1px;

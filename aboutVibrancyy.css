@@ -104,7 +104,8 @@
 /* 
 header, */
 main {
-    background-image: linear-gradient(to right, black , rgb(14, 14, 34));
+	/* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.966),rgb(155, 7, 7),rgb(3, 3, 3),rgb(67, 8, 85),#000); */
+
 	text-align: center;
     display: grid;
 	place-items: center;
@@ -121,7 +122,7 @@ main {
 #cards {
 	list-style: none;
 	outline: calc(var(--outline-width) * 10) solid blue;
-	width: 80vw;;
+	width: 80vw;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(var(--numcards), var(--card-height));
@@ -134,8 +135,9 @@ main {
 
 .card__content {
 	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-	background: rgb(255, 255, 255);
-	color: rgb(10, 5, 7);
+	background-image: linear-gradient(to right,crimson,20%,black);
+
+	color: white;
 	border-radius: 1em;
 	overflow: hidden;
 
@@ -170,7 +172,7 @@ main {
 	object-fit: cover;
 }
 
-h1 {
+/* h1 {
 	font-weight: 300;
 	font-size: 3.5em;
 }
@@ -184,7 +186,7 @@ p {
 	font-family: sans-serif;
 	font-weight: 300;
 	line-height: 1.42;
-}
+} */
 
 .btn {
 	background: rgb(188 87 36);
