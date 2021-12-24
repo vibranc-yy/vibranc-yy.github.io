@@ -77,24 +77,6 @@
 	}
 }
 
-/** DEBUG **/
-
-#debug {
-  position: fixed;
-  top: 1em;
-  left: 1em;
-}
-#debug::after {
-  content: " Show Debug";
-  margin-left: 1.5em;
-  color: white;
-  white-space: nowrap;
-}
-
-#debug:checked ~ main {
-  --outline-width: 1px;
-}
-
 
 /** PAGE STYLING **/
 
@@ -109,10 +91,17 @@ main {
 	text-align: center;
     display: grid;
 	place-items: center;
-	font-size: calc(1em + 0.5vw);
+	font-size: calc(1em + 0.5vw);  
 	
-	margin: 0 auto;
+	margin: auto auto;
 }
+@media screen and (max-width: 576px) {
+	main {
+		/* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.966),rgb(155, 7, 7),rgb(3, 3, 3),rgb(67, 8, 85),#000); */
+	
+		font-size: small;
+	}
+} 
 
 /* header {
 	height: 100vh;
