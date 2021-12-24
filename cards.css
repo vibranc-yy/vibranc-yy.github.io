@@ -53,9 +53,9 @@ a, a:hover {
 
   position: absolute;
   top: 30px;
-  background: rgb(216, 212, 212);
-  border-radius: 10px;
-  box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+  /* background: rgb(216, 212, 212); */
+  border-radius: 20px;
+  /* box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25); */
   opacity: 0;
   transition: all 0.3s;
   left: -30px;
