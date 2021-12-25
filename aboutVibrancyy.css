@@ -86,7 +86,7 @@
 /* 
 header, */
 main {
-	/* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.966),rgb(155, 7, 7),rgb(3, 3, 3),rgb(67, 8, 85),#000); */
+	
 
 	text-align: center;
     display: grid;
@@ -123,9 +123,8 @@ main {
 
 .card__content {
 	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-	background-image: linear-gradient(to right,crimson,20%,black);
-
-	color: white;
+	background-image: linear-gradient(to bottom, #FFC069,#FF5B7D	); 
+	color: rgb(8, 8, 8);
 	border-radius: 1em;
 	overflow: hidden;
 
@@ -177,7 +176,7 @@ p {
 } */
 
 .btn {
-	background: rgb(188 87 36);
+	background:crimson;
 	color: rgb(255 255 255);
 	text-decoration: none;
 	display: inline-block;

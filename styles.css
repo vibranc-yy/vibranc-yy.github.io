@@ -3,8 +3,8 @@
   padding: 0px;
 }
 body{
-  color: white;
-  background-image: linear-gradient(to right,black ,85%,rgb(126, 17, 39));
+  color: rgb(8, 0, 0);
+  /* background-image: linear-gradient(to right,black ,85%,rgb(126, 17, 39)); */
 }
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Meow+Script&display=swap');
 .text-center{

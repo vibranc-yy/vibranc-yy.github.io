@@ -3,7 +3,9 @@
 .wrapper{
   margin-top: 30px;
   margin-bottom: 0;
-    /* background-image: linear-gradient(45deg, rgba(209, 0, 42, 0.6) 0%, #0E5DC4 100%); */
+    /* background-image: linear-gradient(45deg, rgba(209, 0, 42, 0.6) 0%, #0E5DC4 100%);  */
+    background-image: linear-gradient(to bottom, #FFC069 0%,#FF5B7D 100%	); 
+
     /* background-image:url("https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132206/news-slider/background.webp"); */
     height: 700px;
     position: relative;
@@ -92,7 +94,8 @@ a, a:hover {
   z-index: 2;
 }
 .news-slider__item {
-  width: 350px;
+  width: 300px;
+  height: 500px;
   flex-shrink: 0;
 }
 @media screen and (max-width: 992px) {
@@ -171,14 +174,14 @@ a, a:hover {
 }
 .news__item {
   padding: 40px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   border-radius: 10px;
   display: block;
   transition: all 0.3s;
 }
 @media screen and (min-width: 800px) {
   .news__item:hover {
-    color: #222222;
+    color: #000000;
     transition-delay: 0.1s;
   }
   .news__item:hover .news-date, .news__item:hover .news__title, .news__item:hover .news__txt {
@@ -190,7 +193,7 @@ a, a:hover {
   }
 }
 .news__item.active {
-  color: #222222;
+  color: #000000;
 }
 .news__item.active .news-date, .news__item.active .news__title, .news__item.active .news__txt {
   opacity: 1;
