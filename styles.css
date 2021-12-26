@@ -10,6 +10,14 @@ body{
 .text-center{
   text-align: center;
 }
+.right{
+  text-align: right;
+}
+
+.left{
+  text-align: left;
+}
+
 header {
     color:blanchedalmond;
     position: relative;
@@ -87,6 +95,7 @@ header {
   position: fixed;
   width: 100%;
 }
+
 .nav ul{
   list-style: none;
   background: crimson;
