@@ -28,14 +28,23 @@ header {
     overflow: hidden;
   }
   header .heading{
-    font-family: 'Meow Script', cursive;
+    font-family:'Times New Roman';
     font-size: 66px;
   }
   header .heading2{
     font-family: 'Lobster', cursive;
     font-size: 24px;
   }
-  
+  @media screen and (max-width: 576px) {
+    header .heading{
+      font-size: 40px;
+    }
+    header .heading2{
+      font-family: 'Lobster', cursive;
+      font-size: 16px;
+    }
+   
+  } 
   header video {
       
     position: absolute;
@@ -67,11 +76,40 @@ header {
     opacity: 0.5;
     z-index: 1;
   }
+
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 10px;
+  }
+  @media only screen and (max-width: 600px) {
+    header nav {
+      display: none;
+    }
+  
+    #hamburger-icon {
+      display: block;
+    }
+  }
   
   /* Media Query for devices withi coarse pointers and no hover functionality */
   
   /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
-  
+/*   
   @media (pointer: coarse) and (hover: none) {
     header {
       background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
@@ -80,7 +118,7 @@ header {
     header video {
       display: none;
     }
-  }
+  } */
 
   /* navbar styling */
 .logo{
@@ -92,11 +130,13 @@ header {
   font-weight: bold;
 }
 .nav{
+  
   position: fixed;
   width: 100%;
 }
 
 .nav ul{
+  
   list-style: none;
   background: crimson;
   overflow: hidden;
@@ -122,6 +162,33 @@ header {
   font-size: 14px;
   font-family: sans-serif;
   letter-spacing: 2px;
+}
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
 }
 
 /* Testimonial ================================ */
