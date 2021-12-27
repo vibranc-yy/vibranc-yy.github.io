@@ -98,7 +98,7 @@ main {
 @media screen and (max-width: 576px) {
 
 	:root {
-		--card-height: 50vw;
+		--card-height: 60vw;
 	}
 } 
 
