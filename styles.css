@@ -113,6 +113,7 @@ header {
 .nav ul{
   
   list-style: none;
+  font-weight: bolder;
   background: white;
   overflow: hidden;
   color: black;
@@ -130,6 +131,9 @@ header {
 .nav ul li{
   display: inline-block;
   padding: 10px;
+}
+.nav ul li:hover{
+  background-color: coral;
 }
 .nav ul li a{
   text-decoration: none;
