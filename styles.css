@@ -77,35 +77,6 @@ header {
     z-index: 1;
   }
 
-  .mobile-menu {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    height: calc(100vh - 50px);
-    width: 100%;
-  }
-  
-  .open .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  .mobile-menu li {
-    margin-bottom: 10px;
-  }
-  @media only screen and (max-width: 600px) {
-    header nav {
-      display: none;
-    }
-  
-    #hamburger-icon {
-      display: block;
-    }
-  }
-  
   /* Media Query for devices withi coarse pointers and no hover functionality */
   
   /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
@@ -138,9 +109,9 @@ header {
 .nav ul{
   
   list-style: none;
-  background: crimson;
+  background: rgb(236, 236, 233);
   overflow: hidden;
-  color: rgb(240, 227, 227);
+  color: black;
   text-align: center;
   margin-left: 15px;
   margin-right: 15px;
@@ -158,7 +129,7 @@ header {
 }
 .nav ul li a{
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 14px;
   font-family: sans-serif;
   letter-spacing: 2px;
@@ -239,4 +210,18 @@ header {
     padding: 30px 20px;
     height: auto;
   }
+}
+
+.item {
+  display: flex;
+  border-radius: 20px;
+  max-width: 700px;
+  width: auto;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+	background-image: linear-gradient(to bottom, #FFC069,#FF5B7D	); 
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }

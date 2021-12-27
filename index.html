@@ -7,11 +7,13 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <title>Vibrancyy</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
   <link rel="stylesheet" href="cards.css">
   <link rel="stylesheet" href="aboutVibrancyy.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
 </head>
 <body>
   
@@ -111,7 +113,20 @@
       
   
   </aside>  -->
-  
+  <div class="item" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quod aliquam amet numquam excepturi facilis deserunt animi porro est dolorem molestiae beatae, ex necessitatibus tempore quo officiis, illum culpa. Officiis!</div>
+<div class="item" data-aos="fade-down">2</div>
+<div class="item" data-aos="fade-right">3</div>
+<div class="item" data-aos="fade-left">4</div>
+
+<div class="item" data-aos="zoom-in">5</div>
+<div class="item" data-aos="zoom-out">6</div>
+
+<div class="item" data-aos="slide-up">7</div>
+
+<div class="item" data-aos="flip-up">8</div>
+<div class="item" data-aos="flip-down">9</div>
+<div class="item" data-aos="flip-right">10</div>
+<div class="item" data-aos="flip-left">11</div>
 <!-- ---------------------------------------------------- -->
 <div class="wrapper">
   <div class="background">
@@ -270,7 +285,20 @@
 
 
 <!-- ---------------------------------------------------------  -->
+<div class="item" data-aos="fade-up">1</div>
+<div class="item" data-aos="fade-down">2</div>
+<div class="item" data-aos="fade-right">3</div>
+<div class="item" data-aos="fade-left">4</div>
 
+<div class="item" data-aos="zoom-in">5</div>
+<div class="item" data-aos="zoom-out">6</div>
+
+<div class="item" data-aos="slide-up">7</div>
+
+<div class="item" data-aos="flip-up">8</div>
+<div class="item" data-aos="flip-down">9</div>
+<div class="item" data-aos="flip-right">10</div>
+<div class="item" data-aos="flip-left">11</div>
   
       <!-- --------------------------------------------------------------- -->
 
@@ -315,6 +343,9 @@
       <footer class="footer">
         <p class="footer-text">&copy; 2021 Created by Maza designDev</p>
       </footer>
+
+
+
   <script>
     var bg = document.querySelector('.item-bg');
 var items = document.querySelectorAll('.news__item');
@@ -438,6 +469,9 @@ swiper.on('slideChangeTransitionEnd', function () {
     bg.style.width = width + 'px';
     bg.style.height = height + 'px';
     bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+});
+AOS.init({
+  duration: 1200,
 });
 
 
