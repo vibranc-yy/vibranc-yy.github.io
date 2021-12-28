@@ -217,7 +217,7 @@ main{
 	background: url(bg.jpg)no-repeat center /cover;
 }
 header{
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 	position: relative;
 	width: 100%;
 }

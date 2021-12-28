@@ -95,9 +95,9 @@ header {
 
 
   img {
-    border-radius: 20px;
+    /* border-radius: 20px;
     width: 30px;
-    height: 30px;
+    height: 30px; */
   }
   /* navbar styling */
 /* .logo{
@@ -108,7 +108,7 @@ header {
   font-size: 24px;
   font-weight: bold;
 } */
-.nav{
+/* .nav{
   
   position: fixed;
   width: 100%;
@@ -145,6 +145,147 @@ header {
   font-size: 14px;
   font-family: sans-serif;
   letter-spacing: 2px;
+} */
+
+/*Navbar=================================*/
+ul{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+a{
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	/* font-size: 1.2em; */
+	transition: .3s;
+}
+
+header{
+  /* margin-top: 2rem; */
+	position: relative;
+	width: 100%;
+}
+
+.container{
+	position: relative;
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav{
+  border: 0px solid black;
+  border-radius: 28px;
+  margin-top: 1.3rem;
+	background: #272727;
+	position: relative;
+	padding: 15px 0;
+	z-index: 10;
+}
+nav ul li:nth-child(1){
+  float: left;
+}
+.logo{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: -60px;
+	left: 35%;
+}
+
+.logo img{
+  border-radius: 56px;
+  margin-top: 1.5rem;
+}
+
+nav ul{
+	width: 100%;
+	transition: .3s;
+}
+nav ul li:nth-child(6){
+	margin-left: 250px;
+}
+nav ul li a{
+	color: white;
+	font-weight: bold;
+}
+nav ul li a:hover{
+	color: #ef3624;
+}
+#menu{
+	display: none;
+}
+
+label{
+	color: #fff;
+	font-size: 1.2em;
+	padding: 15px 0;
+	display: none;
+}
+@media (max-width: 960px){
+	label{
+		display: block;
+	}
+	.container{
+		padding: 0 40px;
+  }
+  .menuList li:nth-child(1),
+  .menuList li:nth-child(2),
+  .menuList li:nth-child(3),
+  .menuList li:nth-child(4){
+		display: none;
+	}
+
+
+	.logo{
+		left: 38%;
+		top: -40px;
+	}
+	.logo img{
+		width: 100px;
+	}
+	nav{
+		padding: 0;
+	}
+	nav ul{
+		position: absolute;
+		top: 53px;
+		left: -100%;
+		background: #000;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+		height: 100vh;
+	}
+	#menu:checked ~ ul{
+		left: 0;
+	}
+	nav ul li{
+		margin: 0 !important;
+		width: 100%;
+	}
+	nav ul li a{
+		border: 1px solid #ef3624;
+		padding: 15px 0;
+		margin: 10px 0;
+		text-align: center;
+	}
+	nav ul li a:hover{
+		background: #ff0;
+	}
+}
+@media (max-width: 460px){
+	.logo{
+		top: -30px;
+	}
+	.logo img{
+		width: 100px;
+    margin-top: 0;
+	}
 }
 
 /* Testimonial ================================ */
