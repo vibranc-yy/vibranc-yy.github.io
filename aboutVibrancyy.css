@@ -95,12 +95,7 @@ main {
 	
 	margin: auto auto;
 }
-@media screen and (max-width: 576px) {
 
-	:root {
-		--card-height:auto;
-	}
-} 
 
 /* header {
 	height: 100vh;
@@ -173,3 +168,17 @@ main {
 
 
 
+@media screen and (max-width: 576px) {
+
+	:root {
+		--card-height:auto;
+	}
+	.btn {
+		padding: 0.3em;
+		font-size: 10px;
+		border-radius: 0.25em;
+	}
+	p{
+		font-size: 12px;
+	}
+} 

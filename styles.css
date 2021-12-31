@@ -94,11 +94,7 @@ header {
   }
 
 
-  img {
-    /* border-radius: 20px;
-    width: 30px;
-    height: 30px; */
-  }
+  
   /* navbar styling */
 /* .logo{
   background-image: url("img/logo.jpg");
@@ -485,4 +481,21 @@ ul{
   .footer-col{
     width: 100%;
 }
+}
+
+
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
