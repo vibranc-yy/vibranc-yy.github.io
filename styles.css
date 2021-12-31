@@ -202,6 +202,13 @@ nav ul li:nth-child(1){
   border-radius: 56px;
   margin-top: 1.5rem;
 }
+@media screen and (max-width: 576px) {
+  .logo{
+    display: none;
+  }
+
+
+}
 
 nav ul{
 	width: 100%;
@@ -223,7 +230,7 @@ nav ul li a:hover{
 
 label{
 	color: #fff;
-	font-size: 1.2em;
+	font-size: 0.8 em;
 	padding: 15px 0;
 	display: none;
 }
