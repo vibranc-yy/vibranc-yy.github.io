@@ -481,6 +481,11 @@ ul{
   .footer-col{
     width: 100%;
 }
+.item {
+  padding:35px 10px;
+  height: auto;
+  width: auto;
+}
 }
 
 

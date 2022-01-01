@@ -2,7 +2,7 @@
 	--card-height: 40vw;
 	--card-margin: 4vw;
 	--card-top-offset: 1em;
-	--numcards: 4;
+	--numcards: 3;
 	--outline-width: 0px;
 }
 
@@ -23,14 +23,15 @@
 	--index: 3;
 }
 
-#card_4 {
+/* #card_4 {
 	--index: 4;
-}
+} */
 
 .card {
 	position: sticky;
 	top: 0;
 	padding-top: calc(var(--index) * var(--card-top-offset));
+	
 }
 
 @supports (animation-timeline: works) {
@@ -180,5 +181,7 @@ main {
 	}
 	p{
 		font-size: 12px;
+		align-content: justify;
+		
 	}
 } 
