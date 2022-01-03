@@ -504,3 +504,19 @@ ul{
     opacity: 1;
   }
 }
+
+.img{
+  background-image: url("f1.png");
+  /* background-size: cover; */
+  width: 80%;
+  height: 90%;
+  object-fit: cover;
+  object-position: bottom;
+  
+}
+.ctr{
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
