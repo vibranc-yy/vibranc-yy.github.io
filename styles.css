@@ -140,13 +140,13 @@ nav ul li:nth-child(1){
 .logo{
 	position: absolute;
 
-	top: -40px;
+	top: -50px;
 	left: 45%;
 }
 
 .logo img{
-  width: 50px;
-	height: 50px;
+  width: 70px;
+	height: 70px;
   border-radius: 56px;
   margin-top: 1.5rem;
 }
@@ -474,12 +474,18 @@ ul{
 	display: flex;
  width: 600px;
   height:200px;
-  background-image: url("features.jpeg");
   background-repeat: no-repeat;
   background-size: 600px 200px;
   /* object-fit:cover;
   object-position: bottom; */
   align-items: center;
+}
+.l{
+  background-image: url("features.jpeg");
+
+}
+.r{
+  background-image: url("features_reversed.jpeg");
 }
 .column1 {
   width: 35%;
@@ -491,8 +497,8 @@ ul{
 }
 .m {
   
-  margin: 40px auto; 
-  height: 320px;
+  margin: 20px auto; 
+  height: 220px;
   width: 600px;  
   /* display: flex; */
   justify-content: center;
