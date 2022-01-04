@@ -82,7 +82,7 @@ header {
     z-index: 2;
   }
   
-  header .overlay {
+  /* header .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -91,7 +91,7 @@ header {
     background-color: black;
     opacity: 0.5;
     z-index: 1;
-  }
+  } */
 
 
 
@@ -482,11 +482,12 @@ ul{
   align-items: center;
 }
 .column1 {
- 
   width: 35%;
 }
 .column2{
-  width: 55%;
+  text-align: center;
+
+  width: 60%;
 }
 .m {
   
@@ -503,7 +504,7 @@ ul{
     display: flex;
     width:auto;
     height: 90px;
-    margin-top: 20px ;
+    margin: 20px 15px;
     
   }
   .row{
