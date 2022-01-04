@@ -505,7 +505,7 @@ ul{
 
 }
 
-@media(max-width:320px){
+@media(max-width:335px){
   .m{
     display: flex;
     width:auto;
