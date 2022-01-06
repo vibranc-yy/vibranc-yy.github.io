@@ -77,24 +77,11 @@ header {
     transform: translateX(-50%) translateY(-50%);
   }
   
-  header .container {
+  header .container1 {
     position: relative;
     z-index: 2;
   }
   
-  /* header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-  } */
-
-
-
 /*Navbar=================================*/
 nav ul{
 	display: flex;
@@ -115,15 +102,7 @@ header{
 	width: 100%;
 }
 
-.container{
-	position: relative;
-	max-width: 960px;
-	margin: 0 auto;
 
-	justify-content: space-between;
-	align-items: center;
-  
-}
 
 nav{
   border: 0px solid black;
@@ -186,9 +165,7 @@ label{
 	label{
 		display: block;
 	}
-	.container{
-		padding: 0 40px;
-  }
+
   .menuList li:nth-child(1),
   .menuList li:nth-child(2),
   .menuList li:nth-child(3),
