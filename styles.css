@@ -115,6 +115,10 @@ nav{
 }
 nav ul li:nth-child(1){
   float: left;
+  padding-left: 20px;
+}
+nav ul li:nth-last-child(1){
+  padding-right: 20px;
 }
 .logo{
 	position: absolute;
