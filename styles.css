@@ -336,7 +336,10 @@ label{
 	max-width: 1170px;
 	margin:auto;
 }
-
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+}
 ul{
 	list-style: none;
 }
