@@ -87,21 +87,21 @@ header {
 
   @media(max-width: 560px) {
     header{
-      height: 75vh;
+      height: 65vh;
       min-height: 21rem;
     }
   }
 
   @media(max-width: 500px) {
     header{
-      height: 75vh;
+      height: 65vh;
       min-height: 20rem;
     }
   }
 
   @media(max-width: 500px) {
     header{
-      height: 75vh;
+      height: 65vh;
       min-height: 20rem;
     }
   }
@@ -238,7 +238,7 @@ label{
 	nav ul li a{
 		border: 1px solid #ef3624;
 		padding: 15px 0;
-		margin: 10px 0;
+		margin:  0 ;
 		text-align: center;
 	}
 	nav ul li a:hover{
