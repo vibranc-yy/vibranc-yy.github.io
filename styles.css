@@ -115,6 +115,10 @@ nav{
 }
 nav ul li:nth-child(1){
   float: left;
+  padding-left: 20px;
+}
+nav ul li:nth-last-child(1){
+  padding-right: 20px;
 }
 .logo{
 	position: absolute;
@@ -332,7 +336,10 @@ label{
 	max-width: 1170px;
 	margin:auto;
 }
-
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+}
 ul{
 	list-style: none;
 }
