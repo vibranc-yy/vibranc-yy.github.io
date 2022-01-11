@@ -208,12 +208,12 @@ label{
 
 
 	.logo{
-		left: 38%;
-		top: -40px;
+		left: 45%;
+		top: -34px;
 	}
-	.logo img{
+	/* .logo img{
 		width: 100px;
-	}
+	} */
 	nav{
 		padding: 0;
 	}
