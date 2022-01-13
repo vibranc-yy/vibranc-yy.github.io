@@ -29,15 +29,27 @@
   }
   input[type=radio]:nth-of-type(2) {
 	outline-color: #fab57a;
-	top: 25%;
+	top: 14%;
   }
   input[type=radio]:nth-of-type(3) {
 	outline-color: #edf798;
-	top: 50%;
+	top: 28%;
   }
   input[type=radio]:nth-of-type(4) {
 	outline-color: #80d6ff;
-	top: 75%;
+	top: 42%;
+  }
+  input[type=radio]:nth-of-type(5) {
+	outline-color: #cddc43;
+	top: 56%;
+  }
+  input[type=radio]:nth-of-type(6) {
+	outline-color: #d79a48;
+	top: 70%;
+  }
+  input[type=radio]:nth-of-type(7) {
+	outline-color: #499263;
+	top: 84%;
   }
   input[type=radio]:checked + .content {
 	transform: translateX(0%);
@@ -69,7 +81,15 @@
   .content:nth-of-type(4) {
 	background-color: #80d6ff;
   }
-  
+  .content:nth-of-type(5) {
+	background-color: #cddc43;
+  }
+  .content:nth-of-type(6) {
+	background-color: #d79a48;
+  }
+  .content:nth-of-type(7) {
+	background-color: #499263;
+  }
   .title {
 	font-size: 5vw;
 	font-weight: bold;
