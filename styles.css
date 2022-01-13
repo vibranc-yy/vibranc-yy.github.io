@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
+
 *{
   margin: 0px;
   padding: 0px;
+  font-family: "Quicksand";
 }
 h2{
 	font-size: 30px;
@@ -26,14 +29,6 @@ body{
 .text-center{
   text-align: center;
 }
-.right{
-  text-align: right;
-}
-
-.left{
-  text-align: left;
-}
-
 header {
     color:blanchedalmond;
     position: relative;
@@ -44,11 +39,9 @@ header {
     overflow: hidden;
   }
   header .heading{
-    font-family:'Times New Roman';
     font-size: 66px;
   }
   header .heading2{
-    font-family: 'Lobster', cursive;
     font-size: 30px;
   }
   @media screen and (max-width: 576px) {
@@ -56,7 +49,6 @@ header {
       font-size: 45px;
     }
     header .heading2{
-      font-family: 'Lobster', cursive;
       font-size: 22px;
     }
    
@@ -259,7 +251,7 @@ label{
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 .testimoni{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand';
   display: flex;
   justify-content: center;
   align-items: center;
@@ -354,7 +346,7 @@ label{
 
 .footer-container{
 	line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Quicksand';
 }
 *{
 	margin:0;

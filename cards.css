@@ -7,12 +7,12 @@
     background-image: linear-gradient(to bottom, #FFC069 0%,#FF5B7D 100%	); 
 
     /* background-image:url("https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132206/news-slider/background.webp"); */
-    height: 600px;
+    height: 700px;
     position: relative;
     overflow-x: hidden !important;
     overflow-y: hidden !important;
 
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand";
 }
 
 
@@ -95,7 +95,7 @@ a, a:hover {
 }
 .news-slider__item {
   width: 300px;
-  height: 400px;
+  height: 500px;
   flex-shrink: 0;
   text-align: center;
 }
@@ -243,6 +243,7 @@ a, a:hover {
   font-size: 16px;
 }
 .news__title {
+  text-transform: none;
   font-size: 25px;
   font-weight: 500;
   opacity: 0.7;
@@ -256,14 +257,16 @@ a, a:hover {
     margin-bottom: 10px;
   }
   .news-slider__item {
-    height: 340px;
+    height: 400px;
   }
 }
 .news__txt {
+  text-transform: none;
   margin: 10px 0;
   line-height: 1.6em;
   font-size: 12px;
   opacity: 0.7;
+  text-align: justify;
   transition: opacity 0.3s;
 }
 .news__img {
@@ -279,15 +282,16 @@ a, a:hover {
 }
 @media screen and (max-width: 576px) {
   .news__img {
-    height: 180px;
+    height: 120px;
+    width: 200px;
     margin-top: 20px;
   }
   .wrapper{
     height: 500px;
   }
   .news-slider__arrow {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
   }
 
 }
