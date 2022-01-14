@@ -1,474 +1,91 @@
-
-<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
 
-<head>
-<!--
-Title and Meta Information
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<script type="text/javascript">
-if(!gform){document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0});var gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),null==t&&(t=10),gform.hooks[o][n].push({tag:i,callable:r,priority:t})},doHook:function(o,n,r){if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[o][n]){var t,i=gform.hooks[o][n];i.sort(function(o,n){return o.priority-n.priority});for(var e=0;e<i.length;e++)"function"!=typeof(t=i[e].callable)&&(t=window[t]),"action"==o?t.apply(null,r):r[0]=t.apply(null,r)}if("filter"==o)return r[0]},removeHook:function(o,n,r,t){if(null!=gform.hooks[o][n])for(var i=gform.hooks[o][n],e=i.length-1;0<=e;e--)null!=t&&t!=i[e].tag||null!=r&&r!=i[e].priority||i.splice(e,1)}}}
-</script>
-
-<title>Contact Media Proper | 484-324-2400</title>
-<link rel="preload" href="/assets/fonts/ddin/ddin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/ddin/ddin-regular.ttf" as="font" type="font/ttf" crossorigin>
-<!--
-Mobile - Used to ensure position:fixed works
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0,  minimum-scale=1.0">
-
-<!--
-Bing Webmaster Meta Tag
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
-<meta name="msvalidate.01" content="6DBFA673D36ABD9DEBDACF881A103CA3" />
-
-<!--
-Favorites and Icons
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
-<link rel="apple-touch-icon" sizes="180x180" href="https://mediaproper.com/wp-content/themes/mpbase/assets/img/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://mediaproper.com/wp-content/themes/mpbase/assets/img/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://mediaproper.com/wp-content/themes/mpbase/assets/img/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
 
-<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
 
-	<!-- This site is optimized with the Yoast SEO plugin v17.2 - https://yoast.com/wordpress/plugins/seo/ -->
-	<title>Contact Media Proper | 484-324-2400</title>
-	<meta name="description" content="Contact Media Proper. Phone: 484-324-2400. E-mail: info@mediaproper.com. Postal: 15 W Third Street, Media, PA 19063." />
-	<link rel="canonical" href="https://mediaproper.com/contact-us/" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Contact Media Proper | 484-324-2400" />
-	<meta property="og:description" content="Contact Media Proper. Phone: 484-324-2400. E-mail: info@mediaproper.com. Postal: 15 W Third Street, Media, PA 19063." />
-	<meta property="og:url" content="https://mediaproper.com/contact-us/" />
-	<meta property="og:site_name" content="Media Proper" />
-	<meta property="article:publisher" content="https://www.facebook.com/phillyweb" />
-	<meta property="article:modified_time" content="2020-03-06T20:08:57+00:00" />
-	<meta property="og:image" content="https://mediaproper.imgix.net/media/2019/05/header-dart.jpg?auto=compress%2Cformat&ixlib=php-1.2.1" />
-	<meta property="og:image:width" content="1920" />
-	<meta property="og:image:height" content="600" />
-	<!-- / Yoast SEO plugin. -->
+    <title>Contact Form #6</title>
+  </head>
+  <body>
+  
 
+  <div class="content">
+    
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          
 
-<link rel='dns-prefetch' href='//use.fontawesome.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel='stylesheet' id='wp-block-library-css'  href='https://mediaproper.com/wp-includes/css/dist/block-library/style.min.css?ver=5.7.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-components-css'  href='https://mediaproper.com/wp-includes/css/dist/components/style.min.css?ver=5.7.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-editor-css'  href='https://mediaproper.com/wp-includes/css/dist/block-editor/style.min.css?ver=5.7.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-nux-css'  href='https://mediaproper.com/wp-includes/css/dist/nux/style.min.css?ver=5.7.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-editor-css'  href='https://mediaproper.com/wp-includes/css/dist/editor/style.min.css?ver=5.7.2' type='text/css' media='all' />
-<link rel='stylesheet' id='mux_video_block_style-css'  href='https://mediaproper.com/wp-content/plugins/ilab-media-tools/public/blocks/mediacloud-mux.blocks.style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='wc-blocks-vendors-style-css'  href='https://mediaproper.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=5.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='wc-blocks-style-css'  href='https://mediaproper.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=5.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='wpmenucart-icons-css'  href='https://mediaproper.com/wp-content/plugins/woocommerce-menu-bar-cart/assets/css/wpmenucart-icons.min.css?ver=2.10.0' type='text/css' media='all' />
-<style id='wpmenucart-icons-inline-css' type='text/css'>
-@font-face{font-family:WPMenuCart;src:url(https://mediaproper.com/wp-content/plugins/woocommerce-menu-bar-cart/assets/fonts/WPMenuCart.eot);src:url(https://mediaproper.com/wp-content/plugins/woocommerce-menu-bar-cart/assets/fonts/WPMenuCart.eot?#iefix) format('embedded-opentype'),url(https://mediaproper.com/wp-content/plugins/woocommerce-menu-bar-cart/assets/fonts/WPMenuCart.woff2) format('woff2'),url(https://mediaproper.com/wp-content/plugins/woocommerce-menu-bar-cart/assets/fonts/WPMenuCart.woff) format('woff'),url(https://mediaproper.com/wp-content/plugins/woocommerce-menu-bar-cart/assets/fonts/WPMenuCart.ttf) format('truetype'),url(https://mediaproper.com/wp-content/plugins/woocommerce-menu-bar-cart/assets/fonts/WPMenuCart.svg#WPMenuCart) format('svg');font-weight:400;font-style:normal;font-display:swap}
-</style>
-<link rel='stylesheet' id='wpmenucart-css'  href='https://mediaproper.com/wp-content/plugins/woocommerce-menu-bar-cart/assets/css/wpmenucart-main.min.css?ver=2.10.0' type='text/css' media='all' />
-<link rel='stylesheet' id='woocommerce-layout-css'  href='https://mediaproper.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=5.6.0' type='text/css' media='all' />
-<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='https://mediaproper.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=5.6.0' type='text/css' media='only screen and (max-width: 768px)' />
-<link rel='stylesheet' id='woocommerce-general-css'  href='https://mediaproper.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=5.6.0' type='text/css' media='all' />
-<style id='woocommerce-inline-inline-css' type='text/css'>
-.woocommerce form .form-row .required { visibility: visible; }
-</style>
-<link rel='stylesheet' id='tawcvs-frontend-css'  href='https://mediaproper.com/wp-content/plugins/variation-swatches-for-woocommerce/assets/css/frontend.css?ver=20200222' type='text/css' media='all' />
-<link rel='stylesheet' id='gforms_reset_css-css'  href='https://mediaproper.com/wp-content/plugins/gravityforms/legacy/css/formreset.min.css?ver=2.5.10' type='text/css' media='all' />
-<link rel='stylesheet' id='gforms_formsmain_css-css'  href='https://mediaproper.com/wp-content/plugins/gravityforms/legacy/css/formsmain.min.css?ver=2.5.10' type='text/css' media='all' />
-<link rel='stylesheet' id='gforms_ready_class_css-css'  href='https://mediaproper.com/wp-content/plugins/gravityforms/legacy/css/readyclass.min.css?ver=2.5.10' type='text/css' media='all' />
-<link rel='stylesheet' id='gforms_browsers_css-css'  href='https://mediaproper.com/wp-content/plugins/gravityforms/legacy/css/browsers.min.css?ver=2.5.10' type='text/css' media='all' />
-<link rel='stylesheet' id='bfa-font-awesome-css'  href='https://use.fontawesome.com/releases/v5.15.4/css/all.css?ver=2.0.1' type='text/css' media='all' />
-<link rel='stylesheet' id='bfa-font-awesome-v4-shim-css'  href='https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css?ver=2.0.1' type='text/css' media='all' />
-<style id='bfa-font-awesome-v4-shim-inline-css' type='text/css'>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              
+              <h3 class="heading mb-4">Let's talk about everything!</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas debitis, fugit natus?</p>
 
-			@font-face {
-				font-family: 'FontAwesome';
-				src: url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.eot'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.woff2') format('woff2'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.woff') format('woff'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.ttf') format('truetype'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.svg#fontawesome') format('svg');
-			}
-
-			@font-face {
-				font-family: 'FontAwesome';
-				src: url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.eot'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.woff2') format('woff2'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.woff') format('woff'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.ttf') format('truetype'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.svg#fontawesome') format('svg');
-			}
-
-			@font-face {
-				font-family: 'FontAwesome';
-				src: url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.eot'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.eot?#iefix') format('embedded-opentype'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.woff2') format('woff2'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.woff') format('woff'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.ttf') format('truetype'),
-				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.svg#fontawesome') format('svg');
-				unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
-			}
-		
-</style>
-<link rel='stylesheet' id='hover-stylesheet-css'  href='https://mediaproper.com/wp-content/themes/mpbase/assets/vendor/hover.css/css/hover-min.css?ver=5.7.2' type='text/css' media='all' />
-<link rel='stylesheet' id='mp-stylesheet-css'  href='https://mediaproper.com/wp-content/themes/mpbase/assets/css/style.min.css?ver=5.7.2' type='text/css' media='all' />
-<link rel='stylesheet' id='aos-stylesheet-css'  href='https://mediaproper.com/wp-content/themes/mpbase/assets/vendor/aos/dist/aos.css?ver=5.7.2' type='text/css' media='all' />
-<script type='text/javascript' src='https://mediaproper.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
-<script type='text/javascript' src='https://mediaproper.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
-<script type='text/javascript' id='wpmenucart-ajax-assist-js-extra'>
-/* <![CDATA[ */
-var wpmenucart_ajax_assist = {"shop_plugin":"woocommerce","always_display":""};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://mediaproper.com/wp-content/plugins/woocommerce-menu-bar-cart/assets/js/wpmenucart-ajax-assist.min.js?ver=2.10.0' id='wpmenucart-ajax-assist-js'></script>
-<script type='text/javascript' defer='defer' src='https://mediaproper.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.5.10' id='gform_json-js'></script>
-<script type='text/javascript' id='gform_gravityforms-js-extra'>
-/* <![CDATA[ */
-var gform_i18n = {"datepicker":{"days":{"monday":"Mon","tuesday":"Tue","wednesday":"Wed","thursday":"Thu","friday":"Fri","saturday":"Sat","sunday":"Sun"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
-var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/mediaproper.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/mediaproper.com\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
-var gf_legacy_multi = {"1":"1"};
-/* ]]> */
-</script>
-<script type='text/javascript' id='gform_gravityforms-js-before'>
-
-</script>
-<script type='text/javascript' defer='defer' src='https://mediaproper.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.5.10' id='gform_gravityforms-js'></script>
-<link rel="https://api.w.org/" href="https://mediaproper.com/wp-json/" /><link rel="alternate" type="application/json" href="https://mediaproper.com/wp-json/wp/v2/pages/78" /><link rel="alternate" type="application/json+oembed" href="https://mediaproper.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmediaproper.com%2Fcontact-us%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://mediaproper.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmediaproper.com%2Fcontact-us%2F&#038;format=xml" />
-	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
-	<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K4NG8VZ');</script>
-<!-- End Google Tag Manager -->
-<!-- Matomo Tag Manager -->
-<script>
-var _mtm = window._mtm = window._mtm || [];
-_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
-var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-g.async=true; g.src='https://stats.mediaproper.com/js/container_31rpowAe.js'; s.parentNode.insertBefore(g,s);
-</script>
-<!-- End Matomo Tag Manager -->
-</head>
-<body class="page-template-default page page-id-78 wp-embed-responsive theme-mpbase wc-braintree-body woocommerce-no-js contact-us page-contact-us" itemscope itemtype="http://schema.org/WebPage">
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4NG8VZ"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Media Proper",
-  "description":"Philadelphia website design, search engine marketing, ongoing care and maintenance. Hire the best in the business - 484-324-2400",
-  "logo":"https://mediaproper.imgix.net/media/2019/05/logo.png?auto=compress%2Cformat&ixlib=php-1.2.1",
-  "image": "https://mediaproper.imgix.net/media/2020/03/default-hero-scaled.jpg?auto=compress%2Cformat&ixlib=php-1.2.1",
-  "priceRange":"$ - $$$",
-  "hasMap":"https://goo.gl/maps/4teZMD5ocwq",
-  "url": "https://mediaproper.com/",
-  "email":"info@mediaproper.com",
-  "telephone": "484-324-2400",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "15 West 3rd St",
-    "addressLocality": "Media",
-    "addressRegion": "PA",
-    "postalCode": "19063",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 39.9208954,
-    "longitude": -75.38938229999997
-  },
-  "openingHours":["Mo-Fr 9:00-17:30"],
-  "sameAs": [
-    "https://www.facebook.com/MediaProper/",
-    "https://www.yelp.com/biz/media-proper-media"
-  ],
-  "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"5",
-    "ratingCount":"18"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "WebSite",
-    "url": "https://mediaproper.com/",
-    "name": "Media Proper",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://mediaproper.com/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-}
-</script>
-
-<div class="grid-container">
-
-			<!--- Logo --->
-		<div class="menu-bar-background"></div>
-		<div class="logo">
-			<a href="/" class="box">
-				<img class="header-logo" src="/assets/img/mp-logo-blue-marker.svg" alt="Philadelphia Web Design - Media Proper"></img>
-			</a>
-		</div>
-	
-<!--- Main Navigation --->
-<button id="hamburger" aria-label="mobile navigation" class="hamburger hamburger--elastic slide-overlay" type="button">
-  <span class="hamburger-box">
-    <span class="hamburger-inner light"></span>
-  </span>
-</button>
-<nav class="light" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-  <ul>
-<li id="menu-item-4282" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4282"><a href="/work/">Work</a></li>
-<li id="menu-item-4553" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4553"><a href="https://mediaproper.com/services/">Services</a></li>
-<li id="menu-item-4907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4907"><a href="https://mediaproper.com/our-process/">Process</a></li>
-<li id="menu-item-1927" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1927"><a href="https://mediaproper.com/about/">About</a></li>
-<li id="menu-item-1925" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1925"><a href="https://mediaproper.com/blog/">Blog</a></li>
-<li id="menu-item-1923" class="btn menu-item menu-item-type-post_type menu-item-object-page menu-item-1923"><a href="https://mediaproper.com/start-a-project/">Start a Project</a></li>
-<li class="menu-item wpmenucartli wpmenucart-display-standard menu-item" id="wpmenucartli"><a class="wpmenucart-contents empty-wpmenucart" style="display:none">&nbsp;</a></li></ul>
-</nav>
-
-<div class="mobile-nav-overlay" aria-hidden="true">
-
-<div class="mobile-logo"><img src="/assets/img/mp-logo-blue-badge.svg" alt="Philadelphia Web Design - Media Proper"></img></div>
-<!--- Mobile Navigation --->
-<nav class="mobile-navi light" role="mobile-navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-  <ul>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4282"><a href="/work/">Work</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4553"><a href="https://mediaproper.com/services/">Services</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4907"><a href="https://mediaproper.com/our-process/">Process</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1927"><a href="https://mediaproper.com/about/">About</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1925"><a href="https://mediaproper.com/blog/">Blog</a></li>
-<li class="btn menu-item menu-item-type-post_type menu-item-object-page menu-item-1923"><a href="https://mediaproper.com/start-a-project/">Start a Project</a></li>
-<li class="menu-item wpmenucartli wpmenucart-display-standard menu-item" id="wpmenucartli"><a class="wpmenucart-contents empty-wpmenucart" style="display:none">&nbsp;</a></li></ul>
-</nav>
-</div>
-
-<div class="hero-img" role="banner" data-z-index="-1" data-parallax="scroll" data-image-src="https://mediaproper.imgix.net/2019/05/header-dart.jpg?auto=compress%2Cformat&ixlib=php-3.3.0&" ></div>
-<div class="hero-callout">
-	<h1 class="light">Give Us a Shout</h1>
-	<h2 class="light"></h2>
-</div>
-
-	<main class="main" role="main">
-
-	<div class="main-content">
-		
-
-<div class="wp-block-group has-ocean-background-color has-background"><div class="wp-block-group__inner-container">
-<h3 class="has-white-color has-text-color has-text-align-center intro">Use the form below to drop us an e-mail.  Old-fashioned phone calls work too &gt;&gt; <a href="tel:+4843242400">484.324.2400</a></h3>
-</div></div>
+              <p><img src="img/undraw-contact.svg" alt="Image" class="img-fluid"></p>
 
 
-
-<svg class="pointer" xmlns="https://www.w3.org/2000/svg" version="1.1" width="100%" viewBox="0 0 100 102" preserveAspectRatio="none">
-	<path d="M0 0 L50 100 L100 0 Z"></path>
-</svg>
-
-
-
-                <div class='gf_browser_chrome gform_wrapper gform_legacy_markup_wrapper' id='gform_wrapper_1' ><div id='gf_1' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_1' id='gform_1'  action='/contact-us/#gf_1' >
-                        <div class='gform_body gform-body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id="field_1_1" class="gfield form-first gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible" ><label class='gfield_label' for='input_1_1' >First Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_1' id='input_1_1' type='text' value='' class='large'    placeholder='First Name*' aria-required="true" aria-invalid="false"   /> </div></li><li id="field_1_2" class="gfield form-last gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible" ><label class='gfield_label' for='input_1_2' >Last Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_2' id='input_1_2' type='text' value='' class='large'    placeholder='Last Name*' aria-required="true" aria-invalid="false"   /> </div></li><li id="field_1_3" class="gfield form-email gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible" ><label class='gfield_label' for='input_1_3' >Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
-                            <input name='input_3' id='input_1_3' type='text' value='' class='large'   placeholder='Email*' aria-required="true" aria-invalid="false"  />
-                        </div></li><li id="field_1_4" class="gfield form-phone field_sublabel_below field_description_below gfield_visibility_visible" ><label class='gfield_label' for='input_1_4' >Phone</label><div class='ginput_container ginput_container_phone'><input name='input_4' id='input_1_4' type='text' value='' class='large'  placeholder='Phone Number'  aria-invalid="false"   /></div></li><li id="field_1_5" class="gfield form-website field_sublabel_below field_description_below gfield_visibility_visible" ><label class='gfield_label' for='input_1_5' >Website</label><div class='ginput_container ginput_container_text'><input name='input_5' id='input_1_5' type='text' value='' class='large'    placeholder='Website'  aria-invalid="false"   /> </div></li><li id="field_1_6" class="gfield form-company field_sublabel_below field_description_below gfield_visibility_visible" ><label class='gfield_label' for='input_1_6' >Company</label><div class='ginput_container ginput_container_text'><input name='input_6' id='input_1_6' type='text' value='' class='large'    placeholder='Company'  aria-invalid="false"   /> </div></li><li id="field_1_7" class="gfield form-para field_sublabel_below field_description_below gfield_visibility_visible" ><label class='gfield_label' for='input_1_7' >What can we do for you?</label><div class='ginput_container ginput_container_textarea'><textarea name='input_7' id='input_1_7' class='textarea medium'    placeholder='What can we do for you?'  aria-invalid="false"   rows='10' cols='50'></textarea></div></li><li id="field_1_10" class="gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible" ><div class='ginput_container ginput_container_text'><input name='input_10' id='input_1_10' type='hidden' class='gform_hidden'  aria-invalid="false" value='' /></div></li><li id="field_1_11" class="gfield gform_validation_container field_sublabel_below field_description_below gfield_visibility_visible" ><label class='gfield_label' for='input_1_11' >Comments</label><div class='ginput_container'><input name='input_11' id='input_1_11' type='text' value='' /></div><div class='gfield_description' id='gfield_description_1_11'>This field is for validation purposes and should be left unchanged.</div></li></ul></div>
-        <div class='gform_footer top_label'> <input type="submit" id="gform_submit_button_1" class="gform_button button btn-pill btn-gray" value="Send It" onclick='if(window["gf_submitting_1"]){return false;}  window["gf_submitting_1"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_1"]){return false;} window["gf_submitting_1"]=true;  jQuery("#gform_1").trigger("submit",[true]); }'> <input type='hidden' name='gform_ajax' value='form_id=1&amp;title=&amp;description=&amp;tabindex=0' />
-            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
-            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
-            
-            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
-            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsImNhOTM0Zjc1ZGQ4OTc2OTNiYjVlM2MwN2MxMTRjZWM0Il0=' />
-            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
-            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
-            <input type='hidden' name='gform_field_values' value='' />
-            
-        </div>
-                        </form>
-                        </div>
-                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_1' id='gform_ajax_frame_1' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
-                <script type="text/javascript">
-gform.initializeOnLoaded( function() {gformInitSpinner( 1, 'https://mediaproper.com/wp-content/plugins/gravityforms/images/spinner.svg' );jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_1').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_1').val();gformInitSpinner( 1, 'https://mediaproper.com/wp-content/plugins/gravityforms/images/spinner.svg' );jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_1').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_1').text());}, 50);}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [1, current_page]);} );} );
-</script>
-
-</div>
-
-<div class="portfolio-pieces">
-        <a class="box" href="https://mediaproper.com/work/duane-morris-institute/">
-            <div class="bg" style="background-image:url('https://mediaproper.imgix.net/2021/09/AdobeStock_186622080-scaled-2.jpeg?auto=compress%2Cformat&ixlib=php-3.3.0')"></div>
-            <div class="content">
-                <h2>Duane Morris Institute</h2>
-                <p>Website Design & Custom Integrations
-</p>
             </div>
-            <div class="overlay overlay-dmi-overlay"></div>
-        </a>
-        <a class="box" href="https://mediaproper.com/work/bucks-county-spca/">
-            <div class="bg" style="background-image:url('https://mediaproper.imgix.net/2021/07/4023-3159-max-1.jpeg?auto=compress%2Cformat&ixlib=php-3.3.0')"></div>
-            <div class="content">
-                <h2>Bucks County SPCA</h2>
-                <p>Web Design & PetPoint API Integration</p>
+            <div class="col-md-6">
+              
+              <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
+                  </div>
+                </div>  
+                <div class="row">
+                  <div class="col-12">
+                    <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+                  <span class="submitting"></span>
+                  </div>
+                </div>
+              </form>
+
+              <div id="form-message-warning mt-4"></div> 
+              <div id="form-message-success">
+                Your message was sent, thank you!
+              </div>
             </div>
-            <div class="overlay overlay-bcspca-overlay"></div>
-        </a>
-        <a class="box" href="https://mediaproper.com/work/alliance/">
-            <div class="bg" style="background-image:url('https://mediaproper.imgix.net/2021/04/button.png?auto=compress%2Cformat&bri=-9&ixlib=php-3.3.0')"></div>
-            <div class="content">
-                <h2>Alliance Concrete Pumps</h2>
-                <p>Web Design & WooCommerce Store</p>
-            </div>
-            <div class="overlay overlay-alliance-overlay"></div>
-        </a>
+          </div>
         </div>
-</main>
-
-<script>
-var elements = document.getElementsByClassName('fade-up');
-for (var i = 0; i < elements.length; i++) {
-	elements[i].setAttribute("data-aos", "fade-up");
-}
-var elements = document.getElementsByClassName('fade');
-for (var i = 0; i < elements.length; i++) {
-	elements[i].setAttribute("data-aos", "fade");
-}
-
-</script>
-
-<footer class="footer">
-	<div class="left-footer map"
-	 data-zoom="4" data-locations="[41.898743, 12.498862], [41.998743, 12.898862]"
-	 data-streetviewcontrol="false"
-	 data-zoomcontrol="false"
-	 >
-
-</div>
-<!-- <script async defer type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCqaK_bqHeGpJAyR_JTQ9qIRPzER_ax_ss&callback=initMap'></script> -->
-	<div class="right-footer">
-		<div class="footer-logo">
-		<img class="lazy" data-src="/assets/img/mp-logo-blue-badge.svg" alt="Philadelphia Web Design - Media Proper"/>
-	</div>
-		<div class="address">
-			<span class="street-address">15 West 3rd St</span> <span class="pipe">/</span> <span class="locality">Media</span>, <span class="region">PA</span> <span class="postal-code">19063</span></br/>
-			<span class="tel"><a href="tel:14843242400">484-324-2400</a></span> <span class="pipe">/</span> <a class="email" href="mailto:info@mediaproper.com">info@mediaproper.com</a>
-			<p class="directions"><a href="https://www.google.com/maps?t=m&z=16&daddr=15+West+Third+St.,+Media,+PA+19063">Get Directions</a></p>
-			<p class="social"><a href="https://www.facebook.com/MediaProper" aria-label="Media Proper on Facebook" target="_blank" rel="noreferrer"><i class="fa fa-facebook-square fa-2x"></i></a>
-			<a href="https://www.instagram.com/mediaproper/" target="_blank" aria-label="Media Proper on Instagram" rel="noreferrer"><i class="fab fa-instagram-square fa-2x"></i></a>
-			<a href="https://www.google.com/maps/place/Media+Proper/@39.9208954,-75.3893823,15z/data=!4m5!3m4!1s0x0:0xcc7c94e88548c580!8m2!3d39.9208954!4d-75.3893823?hl=en" aria-label="Media Proper on Google" target="_blank" rel="noreferrer"><i class="fa fa-google fa-2x"></i></a>
-		  </p>
-		<a class="btn-pill" href="/start-a-project/">Start Your Project</a>
-	</div>
-	<div class="vcard" style="display: none;">
-        <img class="photo lazy" src="img/logo.png" alt="Philadelphia Web Design - Media Proper">
-        <div class="fn">Media Proper</div>
-        <div class="org">Media Proper</div>
-        <div class="adr">
-            <div class="street-address">15 West 3rd St</div>
-            <span class="locality">Media</span>,
-            <abbr class="region" title="Pennsylvania">PA</abbr>&nbsp;&nbsp;
-            <span class="postal-code">19063</span>
-            <div class="country-name">USA</div>
-        </div>
-        <div class="tel">
-            <span class="type">Work</span> +1-484-324-2400
-        </div>
-        <div>Email:
-            <span class="email">info@mediaproper.com</span>
-        </div>
+      </div>
     </div>
-	<div class="footer-menu">
-				<div id="nav_menu-9" class="widget widget_nav_menu"><div class="menu-footer-legal-container"><ul id="menu-footer-legal" class="menu"><li id="menu-item-3028" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-78 current_page_item menu-item-3028"><a href="https://mediaproper.com/contact-us/" aria-current="page">Contact</a></li>
-<li id="menu-item-4893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4893"><a href="https://mediaproper.com/service-areas/">Service Areas</a></li>
-<li id="menu-item-2993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2993"><a href="https://mediaproper.com/web-design-jobs/">Careers</a></li>
-<li id="menu-item-13289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13289"><a href="https://mediaproper.com/shop/">Store</a></li>
-<li id="menu-item-3049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3049"><a href="https://mediaproper.com/privacy-policy/">Privacy Policy</a></li>
-</ul></div></div>		
-	</div>
-	<div class="footer-copyright">© 2022 Media Proper</div>
 
-</div>
-</footer>
-	<script type="text/javascript">
-		(function () {
-			var c = document.body.className;
-			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
-			document.body.className = c;
-		})();
-	</script>
-	<script type='text/javascript' src='https://mediaproper.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.5.6.0' id='jquery-blockui-js'></script>
-<script type='text/javascript' id='wc-add-to-cart-js-extra'>
-/* <![CDATA[ */
-var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/mediaproper.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://mediaproper.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=5.6.0' id='wc-add-to-cart-js'></script>
-<script type='text/javascript' src='https://mediaproper.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.5.6.0' id='js-cookie-js'></script>
-<script type='text/javascript' id='woocommerce-js-extra'>
-/* <![CDATA[ */
-var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://mediaproper.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=5.6.0' id='woocommerce-js'></script>
-<script type='text/javascript' id='wc-cart-fragments-js-extra'>
-/* <![CDATA[ */
-var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_d4a0565d0ac1ab5a8e6c51ec5ffd682e","fragment_name":"wc_fragments_d4a0565d0ac1ab5a8e6c51ec5ffd682e","request_timeout":"5000"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://mediaproper.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=5.6.0' id='wc-cart-fragments-js'></script>
-<script type='text/javascript' src='https://mediaproper.com/wp-content/plugins/variation-swatches-for-woocommerce/assets/js/frontend.js?ver=20200317' id='tawcvs-frontend-js'></script>
-<script type='text/javascript' src='https://mediaproper.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
-<script type='text/javascript' id='wp-polyfill-js-after'>
-( 'fetch' in window ) || document.write( '<script src="https://mediaproper.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://mediaproper.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://mediaproper.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://mediaproper.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://mediaproper.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://mediaproper.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="https://mediaproper.com/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"></scr' + 'ipt>' );
-</script>
-<script type='text/javascript' src='https://mediaproper.com/wp-includes/js/dist/dom-ready.min.js?ver=eb19f7980f0268577acb5c2da5457de3' id='wp-dom-ready-js'></script>
-<script type='text/javascript' src='https://mediaproper.com/wp-includes/js/dist/hooks.min.js?ver=50e23bed88bcb9e6e14023e9961698c1' id='wp-hooks-js'></script>
-<script type='text/javascript' src='https://mediaproper.com/wp-includes/js/dist/i18n.min.js?ver=db9a9a37da262883343e941c3731bc67' id='wp-i18n-js'></script>
-<script type='text/javascript' id='wp-i18n-js-after'>
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-</script>
-<script type='text/javascript' id='wp-a11y-js-translations'>
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", { "locale_data": { "messages": { "": {} } } } );
-</script>
-<script type='text/javascript' src='https://mediaproper.com/wp-includes/js/dist/a11y.min.js?ver=5e00de7a43b31bbb9eaf685f089a3903' id='wp-a11y-js'></script>
-<script type='text/javascript' defer='defer' src='https://mediaproper.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=2.5.10' id='gform_masked_input-js'></script>
-<script type='text/javascript' defer='defer' src='https://mediaproper.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.5.10' id='gform_placeholder-js'></script>
-<script type='text/javascript' src='https://mediaproper.com/wp-content/themes/mpbase/assets/vendor/aos/dist/aos.js?ver=5.7.2' id='aos-js'></script>
-<script type='text/javascript' src='https://mediaproper.com/wp-content/themes/mpbase/assets/vendor/jquery-parallax.js/parallax.min.js?ver=5.7.2' id='parallax-js'></script>
-<script type='text/javascript' src='https://mediaproper.com/wp-content/themes/mpbase/assets/vendor/jquery-lazy/jquery.lazy.min.js?ver=5.7.2' id='lazy-js'></script>
-<script type='text/javascript' src='https://mediaproper.com/wp-content/themes/mpbase/assets/vendor/js-cookie/src/js.cookie.js?ver=5.7.2' id='jscookie-js'></script>
-<script type='text/javascript' src='https://mediaproper.com/wp-content/themes/mpbase/assets/vendor/body-scroll-lock/lib/bodyScrollLock.min.js?ver=5.7.2' id='body-scroll-lock-js'></script>
-<script type='text/javascript' src='https://mediaproper.com/wp-content/themes/mpbase/assets/js/custom.min.js?ver=5.7.2' id='custom-js'></script>
-<script type='text/javascript' src='https://mediaproper.com/wp-includes/js/wp-embed.min.js?ver=5.7.2' id='wp-embed-js'></script>
-<script type="text/javascript">
-gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(typeof Placeholders != 'undefined'){
-                        Placeholders.enable();
-                    }jQuery('#input_1_4').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );jQuery( document ).on( 'submit.gravityforms', '.gform_wrapper form', function( event ) {
-	jQuery( '<input>' ).attr( 'type', 'hidden' )
-		.attr( 'name', 'gf_zero_spam_key' )
-		.attr( 'value', 'yLE4qkVECOvNDpCVfiDqis7eM5XeNgov7fSlWzpvCs1oYRoThMPphmZkJGmM3Yna' )
-		.appendTo( jQuery( this ) );
-} );} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
-</script>
-<script type="text/javascript">
-gform.initializeOnLoaded( function() { jQuery(document).trigger('gform_post_render', [1, 1]) } );
-</script>
-</body>
+  </div>
+    
+    
 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
 </html>
