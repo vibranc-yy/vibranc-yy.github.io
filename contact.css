@@ -200,6 +200,9 @@ body {
 
 
 /*Navbar=================================*/
+.menu-label{
+	padding-left: 1rem;
+  }
 nav ul{
 	display: flex;
 	justify-content: space-between;
@@ -214,7 +217,7 @@ a{
 }
 
 header{
-  /* margin-top: 2rem; */
+    margin-bottom: 1rem;
 	position: relative;
 	width: 100%;
 }
@@ -293,7 +296,8 @@ label{
   .menuList li:nth-child(1),
   .menuList li:nth-child(2),
   .menuList li:nth-child(3),
-  .menuList li:nth-child(4){
+  .menuList li:nth-child(4),
+  .menuList li:nth-child(5){
 		display: none;
 	}
 
@@ -335,6 +339,9 @@ label{
 	nav ul li a:hover{
 		background: #ff0;
 	}
+	nav ul li:nth-last-child(1){
+		padding-right: 0px;
+	}
 }
 @media (max-width: 460px){
 	.logo{
@@ -352,6 +359,9 @@ label{
 /*Footer==================================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+footer{
+	margin-top: 1rem;
+}
 .footer-container{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
