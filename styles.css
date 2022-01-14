@@ -104,6 +104,9 @@ header {
   }
   
 /*Navbar=================================*/
+.menu-label{
+  padding-left: 1rem;
+}
 nav ul{
 	display: flex;
 	justify-content: space-between;
@@ -194,7 +197,8 @@ label{
   .menuList li:nth-child(1),
   .menuList li:nth-child(2),
   .menuList li:nth-child(3),
-  .menuList li:nth-child(4){
+  .menuList li:nth-child(4),
+  .menuList li:nth-child(5){
 		display: none;
 	}
 
@@ -236,6 +240,9 @@ label{
 	nav ul li a:hover{
 		background: #ff0;
 	}
+  nav ul li:nth-last-child(1){
+    padding-right: 0px;
+  }
 }
 @media (max-width: 460px){
 	.logo{
