@@ -95,3 +95,24 @@
 	font-weight: bold;
 	color: #fff;
   }
+
+  .header {
+	padding-top: 25px;
+	padding-bottom: 25px;
+  }
+  .first-column {
+	  background: green;
+	  color: white;
+	  border-width:2px;
+	  padding: 10px;
+	  border-color:#000;  
+	  background: #5851ff;
+	  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	  align-items: center;
+  
+  }
+  .second-column {
+  
+	border-style: dotted;
+	border-width: 2px;
+  }
