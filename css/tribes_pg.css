@@ -64,11 +64,11 @@ p{
 	top: 56%;
   }
   input[type=radio]:nth-of-type(6) {
-	outline-color: #d79a48;
+	outline-color: #fbbc0c;
 	top: 70%;
   }
   input[type=radio]:nth-of-type(7) {
-	outline-color: #499263;
+	outline-color: crimson;
 	top: 84%;
   }
   input[type=radio]:checked + .content {
@@ -111,10 +111,10 @@ p{
 	background-color:  #96b0a3
   }
   .content:nth-of-type(6) {
-	background-color: #d79a48;
+	background-color: #fbbc0c;
   }
   .content:nth-of-type(7) {
-	background-color: #499263;
+	background-color: crimson;
   }
   .title {
 	font-size: 5vw;
@@ -149,6 +149,8 @@ p{
   }
 
   img{
+	  margin:5px 10px;
+
 	  border-radius: 20px;
 	  width:300px;
 	  height: 400px;
@@ -163,7 +165,7 @@ p{
 		height: 280px;
 	}
 	.land{
-		width:260px;
-		height: 200px;
+		width:240px;
+		height: auto;
 	  }
   }
