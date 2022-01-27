@@ -135,8 +135,12 @@ p{
 	  align-items: center;
   
   }
-  .second-column {
   
-	border-style: dotted;
-	border-width: 2px;
+  .im{
+	/* box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.548); */
+	transition: box-shadow .3s;
+	padding: 10px;
+  }
+  .im:hover {
+	box-shadow: 0 6px 26px 6px rgba(33,33,33,.2); 
   }
