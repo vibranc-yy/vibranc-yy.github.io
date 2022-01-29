@@ -188,3 +188,42 @@ main {
 		font-size: 18px;
 	}
 } 
+
+@media screen and (max-width: 767px) {
+
+	:root {
+		--card-height:auto;
+	}
+	.btn {
+		padding: 0.3em;
+		font-size: 10px;
+		border-radius: 0.25em;
+	}
+	p{
+		font-size: 14px;
+		align-content: justify;
+		
+	}
+	h2{
+		font-size: 20px;
+	}
+} 
+@media screen and (max-width: 900px) {
+
+	:root {
+		--card-height:auto;
+	}
+	.btn {
+		padding: 0.3em;
+		font-size: 10px;
+		border-radius: 0.25em;
+	}
+	p{
+		font-size: 16px;
+		align-content: justify;
+		
+	}
+	h2{
+		font-size: 22px;
+	}
+} 

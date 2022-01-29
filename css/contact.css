@@ -35,13 +35,14 @@ body {
 
 .contact-in:nth-child(1) {
 	flex: 30%;
-	background: crimson;
+	background: rgb(166, 167, 182);
 	color: #fff;
 }
 
 .contact-in:nth-child(2) {
 	flex: 45%;
 	background-image: linear-gradient(to bottom,#FF5B7D, #FFC069	); 
+	/* background:rgb(184, 190, 243); */
 }
 
 .contact-in:nth-child(3) {
