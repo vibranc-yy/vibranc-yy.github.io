@@ -361,4 +361,28 @@ ul{
   .footer-col{
     width: 100%;
   }
+  .footer-col h4{
+	font-size: 14px;
+  }
+  .footer-col ul li a{
+	font-size: 12px;
+  }
 }
+
+
+h2{
+	font-size: 30px;
+}
+p{
+	font-size: 22px;
+}
+
+@media screen and (max-width: 576px) {
+
+	h2 {
+		font-size: 22px;
+	}
+	p{
+		font-size: 14px;
+	}
+} 

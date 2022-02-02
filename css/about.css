@@ -264,6 +264,12 @@ ul{
   .footer-col{
     width: 100%;
   }
+  .footer-col h4{
+	font-size: 14px;
+  }
+  .footer-col ul li a{
+	font-size: 12px;
+  }
 }
 
 
