@@ -16,8 +16,6 @@
 </head>
 <body>
   
-
-<div class="tabs">
   <header>
     <nav>
       <div class="container1">
@@ -42,7 +40,9 @@
       </div>
     </nav>
   </header>
-    <input type="radio" name="name" checked="checked"/>
+<div class="tabs">
+
+    <input type="radio" name="name" checked="checked" onclick="changecolor(1)" />
     <div class="content">
       <div class="container">
         <div class="row gx-4 justify-content-center">
@@ -65,7 +65,7 @@
         
     </div>
 
-    <input type="radio" name="name"/>
+    <input type="radio" name="name" onclick="changecolor(2)"/>
     <div class="content">
       <div class="container">
         <div class="row gx-4 justify-content-center">
@@ -88,7 +88,7 @@
       
     </div>
 
-    <input type="radio" name="name"/>
+    <input type="radio" name="name" onclick="changecolor(3)"/>
     <div class="content"> 
       <div class="container">
         <div class="title">Sports & Fitness</div>
@@ -113,7 +113,7 @@
  
     </div>
 
-    <input type="radio" name="name"/>
+    <input type="radio" name="name" onclick="changecolor(4)"/>
     <div class="content">
       <div class="container">
         <div class="row gx-4 justify-content-center">
@@ -132,7 +132,7 @@
      
     </div>
 
-    <input type="radio" name="name"/>
+    <input type="radio" name="name" onclick="changecolor(5)"/>
     <div class="content">
       <div class="container">
         <div class="title">Design</div>
@@ -152,7 +152,7 @@
      
     </div>
 
-    <input type="radio" name="name"/>
+    <input type="radio" name="name" onclick="changecolor(6)"/>
     <div class="content">
       <div class="container">
         <div class="title">Stock and Finance</div>
@@ -174,7 +174,7 @@
      
     </div>
 
-    <input type="radio" name="name"/>
+    <input type="radio" name="name" onclick="changecolor(7)"/>
     <div class="content">
       <div class="container">
         <div class="title">Art of Living</div>
@@ -234,7 +234,34 @@
 			</div>
 		</div>
 	</footer>
-
+  <script type="text/javascript">
+    document.body.style.backgroundColor="#2f2e33";
+    function changecolor(n) {
+      if(n==1){
+        document.body.style.backgroundColor="#2f2e33";
+      }
+      
+      if(n==2){
+        document.body.style.backgroundColor="#210438";
+      }
+      if(n==3){
+        document.body.style.backgroundColor="#c3d008";
+      }
+      if(n==4){
+        document.body.style.backgroundColor="#984d2d";
+      }
+      if(n==5){
+        document.body.style.backgroundColor="#96b0a3";
+      }
+      if(n==6){
+        document.body.style.backgroundColor="#d9a327";
+      }
+      if(n==7){
+        document.body.style.backgroundColor="crimson";
+      }
+      
+    }
+</script>
     
 
     <script src="js/jquery-3.3.1.min.js"></script>

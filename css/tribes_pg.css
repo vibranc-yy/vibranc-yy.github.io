@@ -4,7 +4,9 @@
   font-family: "Quicksand";
 	margin: 0px;
 	padding: 0px;
+
   }
+
 h2{
 	font-size: 36px;
 }
@@ -22,6 +24,7 @@ p{
 	}
 } 
 .tabs {
+	margin-top: 30px;
 	height: 100vh;
 	position: relative;
 	/* overflow: hidden; */
@@ -31,7 +34,7 @@ p{
 	position: absolute;
 	left: 0;
 	width: 24px;
-	height: 25%;
+	height: 15%;
 	outline: 12px solid;
 	outline-offset: -12px;
 	margin: 0;
@@ -45,31 +48,31 @@ p{
   input[type=radio]:nth-of-type(1) {
 	/* outline-color: #f06868; */
 	outline-color: #2f2e33;
-	top: 0%;
+	top: -5%;
   }
   input[type=radio]:nth-of-type(2) {
 	outline-color:#210438;
-	top: 14%;
+	top: 9%;
   }
   input[type=radio]:nth-of-type(3) {
 	outline-color: #c3d008;
-	top: 28%;
+	top: 23%;
   }
   input[type=radio]:nth-of-type(4) {
 	outline-color: #984d2d;
-	top: 42%;
+	top: 38%;
   }
   input[type=radio]:nth-of-type(5) {
 	outline-color:#96b0a3;
-	top: 56%;
+	top: 51%;
   }
   input[type=radio]:nth-of-type(6) {
 	outline-color: #d9a327;
-	top: 70%;
+	top: 65%;
   }
   input[type=radio]:nth-of-type(7) {
 	outline-color: crimson;
-	top: 84%;
+	top: 79%;
   }
   input[type=radio]:checked + .content {
 	transform: translateX(0%);
@@ -77,6 +80,7 @@ p{
   }
   
   .content {
+	margin-top: 0%;
 	display: flex;
 	align-items: center;
 	flex-flow: column;
@@ -98,6 +102,7 @@ p{
 	/* background-color: #f06868; */
 	background-color: #2f2e33;
   }
+  
   .content:nth-of-type(2) {
 	background-color: #210438;
   }
@@ -174,7 +179,9 @@ p{
 /*Navbar=================================*/
 .menu-label{
 	padding-left: 1rem;
+	display: none;
   }
+
 nav ul{
   font-family: "Quicksand";
 
@@ -183,7 +190,7 @@ nav ul{
 	list-style: none;
   margin-bottom: 0;
 }
-a{
+ a{
 	display: block;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -267,6 +274,9 @@ label{
 @media (max-width: 960px){
 	label{
 		display: block;
+	}
+	.menu-label{
+		display:block;
 	}
 
   .menuList li:nth-child(1),
