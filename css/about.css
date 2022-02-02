@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
+*{
+
+	font-family: "Quicksand";
+  }
+  p{
+	font-family: "Quicksand";
+  }
+  h2,h1,h3{
+	font-family: "Quicksand";
+  }
 /*Navbar=================================*/
 .menu-label{
 	padding-left: 1rem;
@@ -27,12 +38,13 @@ header .container1 {
 }
 
 nav{
+	font-family: "Quicksand";
   border: 0px solid black;
   border-radius: 28px;
   margin-top: 1.3rem;
 	background: black;
 	position: relative;
-	padding: 15px 0;
+	padding: 10px 0;
 	z-index: 10;
 }
 nav ul li:nth-child(1){
@@ -156,14 +168,14 @@ label{
 
 
 /*Footer==================================*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 
 footer{
+	font-family: "Quicksand";
 	margin-top: 1rem;
 }
 .footer-container{
 	line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
 }
 *{
 	margin:0;
@@ -272,5 +284,5 @@ ul{
 	color: purple;
 }
 .yellow{
-	color: rgba(255, 230, 6, 0.918);
+	color: rgb(255, 209, 6);
 }

@@ -295,6 +295,21 @@ a, a:hover {
   }
 
 }
+@media screen and (max-width: 330px) {
+  .news__img {
+    height: 320px;
+    width: 140px;
+    margin-top: 20px;
+  }
+  .wrapper{
+    height: 500px;
+  }
+  .news-slider__arrow {
+    height: 20px;
+    width: 20px;
+  }
+
+}
 .news__img img {
   max-width: 100%;
   border-radius: 10px;
