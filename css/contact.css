@@ -36,7 +36,7 @@ body {
 .contact-in:nth-child(1) {
 	flex: 30%;
 	background: rgb(166, 167, 182);
-	color: #fff;
+	color: black;
 }
 
 .contact-in:nth-child(2) {
@@ -52,7 +52,7 @@ body {
 
 .contact-in h1 {
 	font-size: 24px;
-	color: #fff;
+	color: rgb(0, 0, 0);
 	text-transform: uppercase;
 	font-weight: 500;
 	margin-bottom: 20px;
@@ -98,7 +98,7 @@ body {
 	display: block;
 	width: 30px;
 	height: 30px;
-	padding-top: 2.5px;
+	padding-top: 4px;
 	text-align: center;
 	background: #fff;
 	border-radius: 50px;
