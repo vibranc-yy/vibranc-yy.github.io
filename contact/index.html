@@ -140,33 +140,61 @@
                 </ul>
             </div>
             <div class="contact-in">
-                <h1>Send a Message</h1>
-                <form>
-                    <input
-                        type="text"
-                        placeholder="Full Name"
+
+                <div class="zf-templateWidth"><form action='https://forms.zohopublic.in/nikhil708jain/form/ContactUs1/formperma/yFvGpw2E63-wF0g8-H43pQAc7RNBJmRtdVMUxpVrpX4/htmlRecords/submit' name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data' id='form'><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+<input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+<input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+<div class="zf-templateWrapper"><!---------template Header Starts Here---------->
+<ul class="zf-tempHeadBdr"><li class="zf-tempHeadContBdr"><h2 class="zf-frmTitle"><em>Send a message</em></h2>
+<p class="zf-frmDesc"></p>
+<div class="zf-clearBoth"></div></li></ul><!---------template Header Ends Here---------->
+<!---------template Container Starts Here---------->
+<div class="zf-subContWrap zf-topAlign"><ul>
+<!---------Name Starts Here---------->
+<li class="zf-tempFrmWrapper zf-name zf-namelarge"><label class="zf-labelName">
+</label>
+<div
+class="zf-tempContDiv zf-twoType"
+>
+<div
+class="zf-nameWrapper"
+>
+<span> <input type="text" maxlength="255" name="Name_First" fieldType=7 placeholder="First Name"
                         class="contact-in-input"
-                    />
-                    <input
-                        type="text"
-                        placeholder="Email"
+/><label>First</label> </span>
+ </span> </span>
+<span> <input type="text" maxlength="255" name="Name_Last" fieldType=7 placeholder="Last Name"
                         class="contact-in-input"
-                    />
-                    <input
-                        type="text"
-                        placeholder="Subject"
+/><label>Last</label> </span>
+ </span> </span>
+<div class="zf-clearBoth"></div></div><p id="Name_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+</div><div class="zf-clearBoth"></div></li><br/><!---------Name Ends Here---------->
+<!---------Email Starts Here---------->
+<li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName">
+Email
+<em class="zf-important">*</em>
+</label>
+<div class="zf-tempContDiv"><span> <input
                         class="contact-in-input"
-                    />
-                    <textarea
-                        placeholder="Message"
+ fieldType=9  type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder="Email"/></span> <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+</div><div class="zf-clearBoth"></div></li><br/><!---------Email Ends Here---------->
+<!---------Multiple Line Starts Here---------->
+<li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName">
+Message
+<em class="zf-important">*</em>
+</label>
+<div class="zf-tempContDiv"><span> <textarea name="MultiLine" checktype="c1" maxlength="65535" placeholder="Message"
                         class="contact-in-textarea"
-                    ></textarea>
-                    <input
-                        type="submit"
-                        value="SUBMIT"
-                        class="contact-in-btn"
-                    />
-                </form>
+></textarea> </span><p id="MultiLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+</div><div class="zf-clearBoth"></div></li><!---------Multiple Line Ends Here---------->
+</ul></div><!---------template Container Starts Here---------->
+<ul><li class="zf-fmFooter"><button
+                        class="contact-in-btn zf-submitColor" >Submit</button></li></ul></div><!-- 'zf-templateWrapper' ends --></form></div><!-- 'zf-templateWidth' ends -->
+<script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+var zf_MandArray = [ "Name_First", "Name_Last", "Email", "MultiLine"];
+var zf_FieldArray = [ "Name_First", "Name_Last", "Email", "MultiLine"];
+var isSalesIQIntegrationEnabled = false;
+var salesIQFieldsArray = [];</script>
             </div>
             <div class="contact-in">
                 <iframe
