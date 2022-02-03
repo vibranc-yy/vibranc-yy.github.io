@@ -47,7 +47,7 @@ nav{
   margin-top: 1.3rem;
 	background: black;
 	position: relative;
-	padding: 15px 0;
+	padding: 12px 0;
 	z-index: 10;
 }
 nav ul li:nth-child(1){
@@ -147,7 +147,7 @@ label{
 	}
 	nav ul li a{
 		border: 1px solid crimson;
-		padding: 15px 0;
+		padding: 12px 0;
 		margin:  0;
 		text-align: center;
 	}

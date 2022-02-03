@@ -59,7 +59,7 @@ a {
   .btn.btn-primary {
     background: #000;
     color: #fff;
-    padding: 15px 20px; }
+    padding: 12px 20px; }
   .btn:hover {
     color: #fff; }
   .btn:active, .btn:focus {
@@ -243,7 +243,7 @@ label{
 	}
 	nav ul li a{
 		border: 1px solid crimson;
-		padding: 15px 0;
+		padding: 12px 0;
 		margin: 0;
 		text-align: center;
 	}
