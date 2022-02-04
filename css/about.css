@@ -204,6 +204,7 @@ ul{
 .footer{
 	background-color: black;
     padding: 70px 0;
+	padding-bottom: 10px;
 }
 .footer-col{
    width: 25%;
