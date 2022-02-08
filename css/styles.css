@@ -262,6 +262,7 @@ label{
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 .testimoni{
+
   font-family: 'Quicksand';
   display: flex;
   justify-content: center;
@@ -279,6 +280,7 @@ label{
   align-items: center;
   flex-wrap: wrap;
   margin: 20px;
+  margin-top: 0;
 }
 
 .testi-container .box{
