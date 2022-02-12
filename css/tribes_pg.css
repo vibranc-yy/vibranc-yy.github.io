@@ -448,6 +448,9 @@ ul{
   }
 }
 @media(max-width: 574px){
+	.footer{
+		margin-top: 300px ;
+	}
   .footer-col{
     width: 100%;
   }
