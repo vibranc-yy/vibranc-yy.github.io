@@ -17,12 +17,7 @@ p{
 	height: 400px;
 	width: 250px;
 }
-@media screen and (max-width: 400px) {
-	.iframe{
-	height: 280px;
-	width: 190px;
-	}
-}
+
 @media screen and (max-width: 576px) {
 
 	h2 {
