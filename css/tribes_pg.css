@@ -13,7 +13,16 @@ h2{
 p{
 	font-size: 18px;
 }
-
+.iframe{
+	height: 400px;
+	width: 250px;
+}
+@media screen and (max-width: 400px) {
+	.iframe{
+	height: 280px;
+	width: 190px;
+	}
+}
 @media screen and (max-width: 576px) {
 
 	h2 {
@@ -22,6 +31,7 @@ p{
 	p{
 		font-size: 14px;
 	}
+	
 } 
 .tabs {
 	margin-top: 30px;
@@ -452,4 +462,10 @@ ul{
   .footer-col ul li a{
 	font-size: 12px;
   }
+}
+@media(max-width: 400px){
+	footer{
+		margin-top: 420px ;
+	}
+
 }
