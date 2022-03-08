@@ -52,7 +52,7 @@ nav{
 }
 nav ul li:nth-child(1){
   float: left;
-  padding-left: 20px;
+  padding-left: 200px;
 }
 nav ul li:nth-last-child(1){
   padding-right: 20px;
@@ -208,7 +208,7 @@ ul{
 }
 .footer-col{
    width: 25%;
-   padding: 0 15px;
+   padding: 0 10px;
 }
 .footer-col h4{
 	font-size: 18px;
