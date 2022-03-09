@@ -53,7 +53,21 @@ header {
     }
    
   } 
+  .over-top {
 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1001;
+    background: #fff1;
+    height: 100%;
+    width: 100%;
+}
+.youtube-video{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
   header video {
       
     position: absolute;
