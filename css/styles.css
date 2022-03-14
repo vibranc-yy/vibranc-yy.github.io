@@ -271,6 +271,44 @@ label{
     margin-top: 0;
 	}
 }
+/* the tribes section */
+.the_tribes{
+  display: flex; 
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom, #FFC069,#FF5B7D	);  
+  border-radius: 25px;
+  padding: 2px;
+  width: 60%;
+  margin: 30px auto 70px auto;
+ 
+}
+@media(max-width:500px) {
+  .the_tribes{
+    width:80%;
+  }
+  
+}
+.tribes_links{
+  display: flex;
+  flex-wrap: wrap;
+}
+.t_link_button{
+  background: linear-gradient(to bottom, #FFC069,#FF5B7D	);  
+  padding: 8px;
+  margin:10px;
+  border-radius: 10px;
+}
+.t_link_button:hover{
+  background: crimson;
+  color: white;
+}
+
+.inner{
+  background: white;
+  padding: 25px;
+  border-radius: 25px;
+}
+
 
 /* Testimonial ================================ */
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
