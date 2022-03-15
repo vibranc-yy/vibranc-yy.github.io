@@ -158,15 +158,12 @@ main {
 
 
 .btn {
-	background: black;
+	background:linear-gradient(to bottom right, blue 20%,black 90%	);
 	color: rgb(255 255 255);
 	text-decoration: none;
 	display: inline-block;
 	padding: 0.5em;
 	border-radius: 0.25em;
-}
-.btn:hover{
-	background:linear-gradient(to bottom right, blue 20%,black 80%	);
 }
 
 

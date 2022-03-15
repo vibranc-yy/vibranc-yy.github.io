@@ -314,20 +314,6 @@ label{
 }
 
 
-@keyframes glowing {
-  0% {
-    box-shadow: 0 0 5px white;
-  }
-  50% {
-    box-shadow: 0 0 20px white;
-  }
-  100% {
-    box-shadow: 0 0 5px white;
-  }
-}
-.t_link_button {
-  animation: glowing 1000ms infinite;
-}
 
 /* .inner{
   background: white;
