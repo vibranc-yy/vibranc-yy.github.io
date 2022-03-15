@@ -467,6 +467,28 @@ Let it be your one stop for information, interaction and fun. Here we bring to y
             </div>
         </div>
     </div>
+        <!-- ---------------------FAQS ------------------------------------------ -->
+        <div style="margin: 50px;"class="text-center">
+            <h2 data-aos="fade-down">FAQs</h2>
+        </div>
+        <div class="tabs">
+            <div class="tab">
+               <input type="checkbox" id="chck1">
+               <label class="tab-label" for="chck1">Heading Text</label>
+               <div class="tab-content">
+                   <p>
+                  Place your detailed contents here.
+                  </p>
+               </div>
+            </div>
+            <div class="tab">
+               <input type="checkbox" id="chck2">
+               <label class="tab-label" for="chck2">Heading Text</label>
+               <div class="tab-content">
+                   <p> Your accordion contents </p>
+               </div>
+            </div>
+         </div>
     <!-- ---------------------Footer Section ------------------------------------------ -->
     <footer class="footer">
         <div class="footer-container">
@@ -522,6 +544,20 @@ Let it be your one stop for information, interaction and fun. Here we bring to y
 
 
     <script>
+        var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
         var bg = document.querySelector('.item-bg');
         var items = document.querySelectorAll('.news__item');
         var item = document.querySelector('.news__item');

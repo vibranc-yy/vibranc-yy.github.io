@@ -16,7 +16,7 @@ p{
 @media screen and (max-width: 576px) {
 
 	h2 {
-		font-size: 24px;
+		font-size: 26px;
 	}
 	p{
 		font-size: 16px;
@@ -656,3 +656,63 @@ ul{
   width: 600px;
   height: auto;
 } */
+
+
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.tab-label {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  background: linear-gradient(to bottom, #FFC069,#FF5B7D	);  
+
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+.tab-label:hover {
+  background: crimson ;
+}
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+input:checked + .tab-label {
+  background: crimson;
+}
+input:checked + .tab-label::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
