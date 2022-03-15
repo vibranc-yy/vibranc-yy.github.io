@@ -10,6 +10,7 @@ h2{
 }
 p{
 	font-size: 22px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 576px) {
@@ -277,7 +278,7 @@ label{
   flex-wrap: wrap;
   background: linear-gradient(to bottom, #FFC069,#FF5B7D	);  
   border-radius: 25px;
-  padding: 2px;
+  padding: 30px;
   width: 60%;
   margin: 30px auto 70px auto;
  
@@ -292,22 +293,47 @@ label{
   display: flex;
   flex-wrap: wrap;
 }
+.tribes_links a{
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  text-decoration: none;
+}
 .t_link_button{
-  background: linear-gradient(to bottom, #FFC069,#FF5B7D	);  
+  background: linear-gradient(to bottom right, black 60%,crimson	);
+  color: white;
+  /* background: linear-gradient(to bottom, #FFC069,#FF5B7D	);   */
   padding: 8px;
   margin:10px;
   border-radius: 10px;
+  cursor: pointer;
+
 }
 .t_link_button:hover{
-  background: crimson;
+  background:linear-gradient(to bottom right, blue 20%,black 80%	);
   color: white;
 }
 
-.inner{
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px white;
+  }
+  50% {
+    box-shadow: 0 0 20px white;
+  }
+  100% {
+    box-shadow: 0 0 5px white;
+  }
+}
+.t_link_button {
+  animation: glowing 1000ms infinite;
+}
+
+/* .inner{
   background: white;
   padding: 25px;
   border-radius: 25px;
-}
+} */
 
 
 /* Testimonial ================================ */
