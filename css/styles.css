@@ -659,7 +659,7 @@ ul{
 
 
 .tabs {
-  border-radius: 8px;
+
   overflow: hidden;
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
@@ -676,7 +676,6 @@ ul{
   padding: 1em;
   background: linear-gradient(to bottom, #FFC069,#FF5B7D	);  
 
-  font-weight: bold;
   cursor: pointer;
   /* Icon */
 }
