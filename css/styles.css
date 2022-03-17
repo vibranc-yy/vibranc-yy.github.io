@@ -6,7 +6,7 @@
   font-family: "Quicksand";
 }
 h2{
-	font-size: 30px;
+	font-size: 34px;
 }
 p{
 	font-size: 22px;
@@ -157,7 +157,7 @@ nav ul li:nth-child(1){
   padding-left: 30px;
 }
 nav ul li:nth-last-child(1){
-  padding-right: 150px;
+  padding-right: 30px;
 }
 .logo{
 	position: absolute;
@@ -662,10 +662,13 @@ ul{
 
   overflow: hidden;
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+ 
 }
 .tab {
   width: 100%;
-  color: white;
+margin: auto; 
+/* border-radius: 25px; */
+ color: white;
   overflow: hidden;
 }
 .tab-label {
@@ -674,7 +677,7 @@ ul{
   -webkit-box-pack: justify;
           justify-content: space-between;
   padding: 1em;
-  background: linear-gradient(to bottom, #FFC069,#FF5B7D	);  
+  background: linear-gradient(to left, #FFC069,#FF5B7D	);  
 
   cursor: pointer;
   /* Icon */
