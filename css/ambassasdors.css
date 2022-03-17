@@ -1,0 +1,11 @@
+body{
+    background: linear-gradient(to right , #FFC069,#FF5B7D);  
+}
+.coming_soon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    padding: 50px;
+}
