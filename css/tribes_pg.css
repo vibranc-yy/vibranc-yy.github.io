@@ -468,3 +468,24 @@ ul{
 	}
 
 }
+
+.tribes_links{
+	display: flex;
+	flex-wrap: wrap;
+  }
+.t_link_button{
+	background: linear-gradient(to bottom right, black 60%,crimson	);
+	color: white;
+	/* background: linear-gradient(to bottom, #FFC069,#FF5B7D	);   */
+	padding: 8px;
+	margin:2px 4px;
+	border-radius: 10px;
+	cursor: pointer;
+  
+  }
+  .t_link_button:hover{
+	background:linear-gradient(to bottom right, blue 20%,black 80%	);
+	color: white;
+  }
+  
+  
